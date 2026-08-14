@@ -1,3 +1,5 @@
+![image](https://i.postimg.cc/1zkV5TTg/exec-967a9fd4-3779-42fa-a449-d88777bcb1b6.png)
+
 # Awesome AI Automations
 A curated collection of AI automation tools, workflows, and practical examples.
 
