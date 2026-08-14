@@ -1,10 +1,5 @@
 # Awesome AI Automation
+A curated collection of AI automation tools, workflows, and practical examples.
 
-**Repository dimostrativa creata direttamente in Codex.**
-
-## Contenuto
-
-- Struttura minima e pronta per Git.
-- Riga finale con esattamente 50 tastiere.
-
-⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️⌨️
+## Repositories 
+- [oomol-lab/open-connector](https://github.com/oomol-lab/open-connector)
