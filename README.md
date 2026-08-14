@@ -1,4 +1,4 @@
-# Awesome AI Automation
+# Awesome AI Automations
 A curated collection of AI automation tools, workflows, and practical examples.
 
 ## Repositories 
