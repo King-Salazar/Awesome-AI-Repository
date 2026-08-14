@@ -7,7 +7,7 @@ A curated collection of AI automation tools, workflows, and practical examples.
 - [oomol-lab/open-connector](https://github.com/oomol-lab/open-connector) - Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
 - 
 
-## Star History
+## Star History 
 
 <a href="https://www.star-history.com/?repos=SaPPhire999-afk%2FAwesome-AI-Automations&type=date&legend=top-left">
  <picture>
