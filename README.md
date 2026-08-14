@@ -1,6 +1,6 @@
 # Awesome AI Automation
 
-Repository dimostrativa creata direttamente in Codex.
+*Repository dimostrativa creata direttamente in Codex.*
 
 ## Contenuto
 
