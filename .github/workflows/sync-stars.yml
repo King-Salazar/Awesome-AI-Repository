@@ -2,8 +2,7 @@ name: Sync GitHub stars
 
 on:
   schedule:
-    - cron: "0 9 * * *"
-      timezone: "Europe/Rome"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -24,6 +23,9 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
       - name: Synchronize starred repositories
         env:
           STAR_COLLECTOR_TOKEN: ${{ secrets.STAR_COLLECTOR_TOKEN }}
@@ -39,6 +41,10 @@ jobs:
             echo "No substantive star changes to commit."
             exit 0
           fi
+          git fetch origin "$GITHUB_REF_NAME"
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo "::error::The branch changed during synchronization. Run the workflow again on the latest commit."
+            exit 1
+          fi
           git commit -m "chore: sync starred repositories"
-          git pull --rebase origin "$GITHUB_REF_NAME"
           git push origin "HEAD:$GITHUB_REF_NAME"
