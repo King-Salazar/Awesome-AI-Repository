@@ -8,10 +8,6 @@ A curated collection of AI automation tools, workflows, and practical examples.
 
 <!-- STAR-COLLECTOR:START -->
 <!-- Automatically managed by Star Collector. -->
-
-**Synced starred repositories:** 8  
-**Last synchronization (UTC):** 2026-08-17T10:15:56Z
-
 - [cloudflare/ai](https://github.com/cloudflare/ai)
 - [vercel/ai](https://github.com/vercel/ai)
 - [public-apis/public-apis](https://github.com/public-apis/public-apis)
