@@ -1,17 +1,6 @@
-# ⭐ My Starred Repositories
 
-Automatically synchronized from my GitHub stars.
-
-![AI curated](https://img.shields.io/badge/curated-AI%20only-00A67E?style=for-the-badge)
-![Automatic sync](https://img.shields.io/badge/sync-every%2030%20minutes-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Python](https://img.shields.io/badge/powered%20by-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-> 🧭 A living map of useful AI projects, automatically filtered and organized by sector.
-
-<!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
 
-**6 AI repositories** across **4 sectors** · Last meaningful sync: `2026-08-17T21:46:50Z`
 
 ### 🤖 AI Agents & Automation (3)
 
@@ -40,19 +29,4 @@ Automatically synchronized from my GitHub stars.
 | [**cloudflare/ai**](https://github.com/cloudflare/ai) | No description available. | TypeScript | ⭐ 1.1k | 2026-08-17 |
 
 <!-- STAR-COLLECTOR:END -->
-
-## 🔄 How It Works
-
-- ⭐ Reads the repositories starred by **SaPPhire999-afk**.
-- 🧠 Detects AI relevance from names, descriptions, topics, and project metadata.
-- 🗂️ Groups relevant projects into practical AI sectors.
-- 🕒 Synchronizes every 30 minutes and can also be started manually.
-- 🧾 Keeps unstarred projects in the JSON history while removing them from this list.
-
-## 🔐 Privacy & Security
-
-The GitHub token is stored only as an encrypted Actions secret. It is never written to the code, logs, README, or dataset.
-
----
-
-<p align="center">✨ Curated with curiosity · Automated with GitHub Actions · Built for the AI community ✨</p>
+ty ✨</p>
