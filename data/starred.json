@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-17T21:16:07Z",
+  "last_sync": "2026-08-17T21:46:50Z",
   "repositories": [
     {
       "ai_relevant": false,
@@ -13,7 +13,7 @@
       "language": "Python",
       "name": "public-apis",
       "owner": "public-apis",
-      "stargazers_count": 463136,
+      "stargazers_count": 463150,
       "starred": true,
       "starred_at": "2026-08-14T09:40:20Z",
       "topics": [
@@ -32,7 +32,7 @@
         "software"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T21:14:45Z"
+      "updated_at": "2026-08-17T21:46:07Z"
     },
     {
       "ai_relevant": true,
@@ -100,7 +100,7 @@
       "language": "Shell",
       "name": "superpowers",
       "owner": "obra",
-      "stargazers_count": 273181,
+      "stargazers_count": 273189,
       "starred": true,
       "starred_at": "2026-08-14T09:40:19Z",
       "topics": [
@@ -114,7 +114,7 @@
         "superpowers"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T21:15:22Z"
+      "updated_at": "2026-08-17T21:45:50Z"
     },
     {
       "ai_relevant": true,
@@ -128,12 +128,12 @@
       "language": "Shell",
       "name": "agency-agents",
       "owner": "msitarzewski",
-      "stargazers_count": 145980,
+      "stargazers_count": 145981,
       "starred": true,
       "starred_at": "2026-08-14T09:40:16Z",
       "topics": [],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T21:15:08Z"
+      "updated_at": "2026-08-17T21:27:14Z"
     },
     {
       "ai_relevant": true,
@@ -147,12 +147,12 @@
       "language": "Shell",
       "name": "skills",
       "owner": "mattpocock",
-      "stargazers_count": 220249,
+      "stargazers_count": 220262,
       "starred": true,
       "starred_at": "2026-08-14T09:40:18Z",
       "topics": [],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T21:14:43Z"
+      "updated_at": "2026-08-17T21:45:09Z"
     },
     {
       "ai_relevant": true,
@@ -166,7 +166,7 @@
       "language": "TypeScript",
       "name": "OmniRoute",
       "owner": "diegosouzapw",
-      "stargazers_count": 49774,
+      "stargazers_count": 49787,
       "starred": true,
       "starred_at": "2026-08-14T09:40:17Z",
       "topics": [
@@ -192,7 +192,7 @@
         "token-saver"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T21:15:26Z"
+      "updated_at": "2026-08-17T21:46:31Z"
     },
     {
       "ai_relevant": true,
