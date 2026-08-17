@@ -1,11 +1,6 @@
 name: Sync GitHub stars
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/sync-stars.yml"
   schedule:
     - cron: "0 9 * * *"
       timezone: "Europe/Rome"
