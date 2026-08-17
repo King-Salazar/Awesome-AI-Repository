@@ -1,8 +1,6 @@
 <!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
 
-**6 AI repositories** across **4 sectors** · Last meaningful sync: `2026-08-17T21:16:07Z`
-
 ### 🤖 AI Agents & Automation 
 
 | Repository | Description | Language | Stars | Added |
