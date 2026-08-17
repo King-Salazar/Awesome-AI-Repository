@@ -11,16 +11,15 @@ Automatically synchronized from my GitHub stars.
 <!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
 
-**7 AI repositories** across **4 sectors** · Last meaningful sync: `2026-08-17T10:15:56Z`
+**6 AI repositories** across **4 sectors** · Last meaningful sync: `2026-08-17T11:46:53Z`
 
-### 🤖 AI Agents & Automation (4)
+### 🤖 AI Agents & Automation (3)
 
 | Repository | Description | Language | Stars | Added |
 |---|---|---:|---:|---:|
 | [**obra/superpowers**](https://github.com/obra/superpowers) | An agentic skills framework & software development methodology that works. | Shell | ⭐ 273k | 2026-08-14 |
-| [**mattpocock/skills**](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .agents directory. | Shell | ⭐ 219.8k | 2026-08-14 |
+| [**mattpocock/skills**](https://github.com/mattpocock/skills) | Skills for Real Engineers. Straight from my .agents directory. | Shell | ⭐ 219.9k | 2026-08-14 |
 | [**msitarzewski/agency-agents**](https://github.com/msitarzewski/agency-agents) | A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables. | Shell | ⭐ 145.9k | 2026-08-14 |
-| [**SaPPhire999-afk/Awesome-AI-Repos**](https://github.com/SaPPhire999-afk/Awesome-AI-Repos) | A curated collection of AI automation tools, workflows, and practical examples. | Python | ⭐ 2 | 2026-08-14 |
 
 ### 💻 AI Coding & Developer Tools (1)
 
