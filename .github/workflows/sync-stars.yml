@@ -2,7 +2,8 @@ name: Sync GitHub stars
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 9 * * *"
+      timezone: "Europe/Rome"
   workflow_dispatch:
 
 concurrency:
