@@ -3,7 +3,7 @@
 
 ![Immagine](Ruby.png)
 
-### 🤖 AI Agents & Automation (3)
+### 🤖 AI Agents & Automation 
 
 | Repository | Description | Language | Stars | Added |
 |---|---|---:|---:|---:|
