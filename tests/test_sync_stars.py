@@ -63,8 +63,9 @@ class StarCollectorTests(unittest.TestCase):
         readme = sync_stars.render_readme(first)
         self.assertIn("AI Agents & Automation", readme)
         self.assertNotIn("Public API directory", readme)
-        self.assertNotIn("Description", readme)
-        self.assertNotIn("Stars", readme)
+        self.assertIn("| Repository | Description | Stars |", readme)
+        self.assertNotIn("Language", readme)
+        self.assertNotIn("Added", readme)
 
     def test_readme_updates_only_managed_links(self):
         dataset = sync_stars.merge_dataset(sync_stars.empty_dataset(), [item(1)], "2026-01-01T00:00:00Z")
@@ -75,8 +76,7 @@ class StarCollectorTests(unittest.TestCase):
         self.assertTrue(readme.startswith("# My project\n\n![Banner](banner.png)"))
         self.assertTrue(readme.endswith("Footer text.\n"))
         self.assertNotIn("old links", readme)
-        self.assertIn("- [owner/repo-1](https://github.com/owner/repo-1)", readme)
-        self.assertNotIn("AI agent toolkit", readme)
+        self.assertIn("| [owner/repo-1](https://github.com/owner/repo-1) | AI agent toolkit | ⭐ 1 |", readme)
 
     def test_readme_rejects_unpaired_marker(self):
         dataset = sync_stars.empty_dataset()
