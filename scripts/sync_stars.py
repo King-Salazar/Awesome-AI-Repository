@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Synchronize the authenticated user's GitHub stars into this repository."""
+"""Synchronize and organize the authenticated user's GitHub stars."""
 
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ import re
 import sys
 import tempfile
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -25,13 +26,90 @@ README_PATH = ROOT / "README.md"
 START_MARKER = "<!-- STAR-COLLECTOR:START -->"
 END_MARKER = "<!-- STAR-COLLECTOR:END -->"
 
+CATEGORIES: tuple[tuple[str, str, tuple[str, ...]], ...] = (
+    (
+        "agents",
+        "🤖 AI Agents & Automation",
+        ("agent", "agents", "agentic", "multi agent", "automation", "workflow", "mcp", "computer use", "autonomous"),
+    ),
+    (
+        "coding",
+        "💻 AI Coding & Developer Tools",
+        ("coding", "code generation", "developer tool", "copilot", "cursor", "aider", "claude code", "codex", "software engineering"),
+    ),
+    (
+        "rag",
+        "🔎 RAG, Search & Knowledge",
+        ("rag", "retrieval", "vector database", "vector store", "embedding", "semantic search", "knowledge base"),
+    ),
+    (
+        "creative",
+        "🎨 Multimodal & Creative AI",
+        ("multimodal", "computer vision", "image generation", "video generation", "text to image", "diffusion", "speech", "voice", "audio"),
+    ),
+    (
+        "models",
+        "🧠 Models, LLMs & Generative AI",
+        ("llm", "large language model", "language model", "generative ai", "transformer", "foundation model", "inference", "fine tuning", "prompt"),
+    ),
+    (
+        "research",
+        "📊 Machine Learning, Data & Research",
+        ("machine learning", "deep learning", "neural network", "data science", "pytorch", "tensorflow", "benchmark", "research paper"),
+    ),
+    (
+        "infrastructure",
+        "🛠️ AI Infrastructure & Platforms",
+        ("ai gateway", "model gateway", "model serving", "llm gateway", "ai platform", "ai sdk", "openai proxy", "gpu", "mlops"),
+    ),
+)
+OTHER_CATEGORY = ("other", "✨ Other AI Projects")
+
+AI_SIGNALS = {
+    "ai",
+    "artificial intelligence",
+    "machine learning",
+    "deep learning",
+    "neural network",
+    "agent",
+    "agents",
+    "agentic",
+    "llm",
+    "large language model",
+    "language model",
+    "generative ai",
+    "chatbot",
+    "openai",
+    "anthropic",
+    "claude",
+    "gemini",
+    "deepseek",
+    "mistral",
+    "qwen",
+    "hugging face",
+    "transformer",
+    "rag",
+    "retrieval augmented",
+    "embedding",
+    "vector database",
+    "computer vision",
+    "diffusion",
+    "text to image",
+    "speech recognition",
+    "mcp",
+    "model context protocol",
+    "prompt engineering",
+    "copilot",
+    "codex",
+}
+
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
 def empty_dataset() -> dict[str, Any]:
-    return {"schema_version": 1, "last_sync": None, "repositories": []}
+    return {"schema_version": 2, "last_sync": None, "repositories": []}
 
 
 def load_dataset(path: Path = DATA_PATH) -> dict[str, Any]:
@@ -118,6 +196,37 @@ def fetch_all_starred(token: str) -> list[dict[str, Any]]:
     return results
 
 
+def searchable_text(record: dict[str, Any]) -> str:
+    values = [
+        record.get("name"),
+        record.get("full_name"),
+        record.get("description"),
+        record.get("homepage"),
+        " ".join(record.get("topics") or []),
+    ]
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", str(value).lower()) for value in values if value)
+
+
+def has_phrase(text: str, phrase: str) -> bool:
+    normalized = re.sub(r"[^a-z0-9]+", " ", phrase.lower()).strip()
+    return bool(normalized and re.search(rf"(?:^|\s){re.escape(normalized)}(?:\s|$)", text))
+
+
+def classify_ai(record: dict[str, Any]) -> tuple[bool, str, str]:
+    text = searchable_text(record)
+    relevant = any(has_phrase(text, signal) for signal in AI_SIGNALS)
+    if not relevant:
+        return False, OTHER_CATEGORY[0], OTHER_CATEGORY[1]
+
+    best_key, best_title = OTHER_CATEGORY
+    best_score = 0
+    for key, title, keywords in CATEGORIES:
+        score = sum(1 for keyword in keywords if has_phrase(text, keyword))
+        if score > best_score:
+            best_key, best_title, best_score = key, title, score
+    return True, best_key, best_title
+
+
 def normalize_record(item: dict[str, Any], existing: dict[str, Any] | None, sync_time: str) -> dict[str, Any]:
     repo = item["repo"]
     owner = repo.get("owner") if isinstance(repo.get("owner"), dict) else {}
@@ -129,7 +238,7 @@ def normalize_record(item: dict[str, Any], existing: dict[str, Any] | None, sync
             return repo[name]
         return (existing or {}).get(name, default)
 
-    return {
+    record = {
         "id": repo_id,
         "name": field("name", "") or "",
         "owner": owner.get("login") or (existing or {}).get("owner") or "",
@@ -145,6 +254,11 @@ def normalize_record(item: dict[str, Any], existing: dict[str, Any] | None, sync
         "starred": True,
         "unstarred_at": None,
     }
+    relevant, category, category_title = classify_ai(record)
+    record["ai_relevant"] = relevant
+    record["category"] = category
+    record["category_title"] = category_title
+    return record
 
 
 def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, Any]], sync_time: str) -> dict[str, Any]:
@@ -164,6 +278,10 @@ def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, A
             merged.append(current_by_id.pop(repo_id))
             continue
         historical = dict(record)
+        relevant, category, category_title = classify_ai(historical)
+        historical["ai_relevant"] = relevant
+        historical["category"] = category
+        historical["category_title"] = category_title
         if historical.get("starred", True):
             historical["starred"] = False
             historical["unstarred_at"] = historical.get("unstarred_at") or sync_time
@@ -172,9 +290,9 @@ def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, A
     merged.sort(key=lambda record: int(record["id"]))
 
     old_repositories = existing_data.get("repositories", [])
-    changed = merged != old_repositories or existing_data.get("last_sync") is None
+    changed = merged != old_repositories or existing_data.get("schema_version") != 2 or existing_data.get("last_sync") is None
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "last_sync": sync_time if changed else existing_data.get("last_sync"),
         "repositories": merged,
     }
@@ -183,7 +301,7 @@ def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, A
 def markdown_cell(value: Any) -> str:
     text = "" if value is None else str(value)
     text = " ".join(text.split())
-    return text.replace("\\", "\\\\").replace("|", "\\|").replace("\n", " ")
+    return text.replace("\\", "\\\\").replace("|", "\\|")
 
 
 def short_stars(value: Any) -> str:
@@ -198,42 +316,86 @@ def short_stars(value: Any) -> str:
     return str(number)
 
 
-def render_managed_block(dataset: dict[str, Any], static_content: str = "") -> str:
-    active = [record for record in dataset["repositories"] if record.get("starred")]
+def display_date(value: Any) -> str:
+    text = str(value or "")
+    return text[:10] if len(text) >= 10 else "—"
+
+
+def render_managed_block(dataset: dict[str, Any]) -> str:
+    active = [
+        record
+        for record in dataset["repositories"]
+        if record.get("starred") and record.get("ai_relevant")
+    ]
     active.sort(key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""), reverse=True)
-    visible = [record for record in active if not record.get("html_url") or record["html_url"] not in static_content]
-    lines = [START_MARKER]
-    for record in visible:
-        name = markdown_cell(record.get("full_name"))
-        url = record.get("html_url") or "#"
-        description = markdown_cell(record.get("description")) or "No description available."
-        lines.append(f"- [{name}]({url}) - {description}")
-    if visible:
-        lines[-1] += f" {END_MARKER}"
-    else:
-        lines[0] += END_MARKER
+    counts = Counter(record.get("category_title") or OTHER_CATEGORY[1] for record in active)
+    category_order = [title for _, title, _ in CATEGORIES] + [OTHER_CATEGORY[1]]
+
+    lines = [
+        START_MARKER,
+        "## 📚 AI Repository Collection",
+        "",
+        f"**{len(active)} AI repositories** across **{len(counts)} sectors** · Last meaningful sync: `{dataset.get('last_sync') or 'Never'}`",
+        "",
+    ]
+    if not active:
+        lines.extend(["_No active AI-related starred repositories found yet._", "", END_MARKER])
+        return "\n".join(lines)
+
+    for title in category_order:
+        records = [record for record in active if (record.get("category_title") or OTHER_CATEGORY[1]) == title]
+        if not records:
+            continue
+        lines.extend(
+            [
+                f"### {title} ({len(records)})",
+                "",
+                "| Repository | Description | Language | Stars | Added |",
+                "|---|---|---:|---:|---:|",
+            ]
+        )
+        for record in records:
+            name = markdown_cell(record.get("full_name"))
+            url = record.get("html_url") or "#"
+            description = markdown_cell(record.get("description")) or "No description available."
+            language = markdown_cell(record.get("language")) or "—"
+            stars = short_stars(record.get("stargazers_count"))
+            lines.append(f"| [**{name}**]({url}) | {description} | {language} | ⭐ {stars} | {display_date(record.get('starred_at'))} |")
+        lines.append("")
+    lines.append(END_MARKER)
     return "\n".join(lines)
 
 
 def render_readme(dataset: dict[str, Any], existing_readme: str = "") -> str:
-    static_content = existing_readme
-    if START_MARKER in existing_readme and END_MARKER in existing_readme:
-        before, remainder = existing_readme.split(START_MARKER, 1)
-        _, after = remainder.split(END_MARKER, 1)
-        static_content = before + after
-        return before + render_managed_block(dataset, static_content) + after
+    del existing_readme
+    return f"""# ⭐ My Starred Repositories
 
-    block = render_managed_block(dataset, static_content)
-    repositories_header = re.search(r"(?m)^## Repositories[^\n]*\n", existing_readme)
-    if repositories_header:
-        next_header = re.search(r"(?m)^## ", existing_readme[repositories_header.end():])
-        section_end = repositories_header.end() + next_header.start() if next_header else len(existing_readme)
-        before = existing_readme[:section_end].rstrip()
-        after = existing_readme[section_end:].lstrip("\n")
-        return before + "\n\n" + block + "\n\n" + after
+Automatically synchronized from my GitHub stars.
 
-    fallback = "# ⭐ My Starred Repositories\n\nAutomatically synchronized from my GitHub stars.\n\n"
-    return fallback + block + "\n"
+![AI curated](https://img.shields.io/badge/curated-AI%20only-00A67E?style=for-the-badge)
+![Automatic sync](https://img.shields.io/badge/sync-every%2030%20minutes-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Python](https://img.shields.io/badge/powered%20by-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+> 🧭 A living map of useful AI projects, automatically filtered and organized by sector.
+
+{render_managed_block(dataset)}
+
+## 🔄 How It Works
+
+- ⭐ Reads the repositories starred by **SaPPhire999-afk**.
+- 🧠 Detects AI relevance from names, descriptions, topics, and project metadata.
+- 🗂️ Groups relevant projects into practical AI sectors.
+- 🕒 Synchronizes every 30 minutes and can also be started manually.
+- 🧾 Keeps unstarred projects in the JSON history while removing them from this list.
+
+## 🔐 Privacy & Security
+
+The GitHub token is stored only as an encrypted Actions secret. It is never written to the code, logs, README, or dataset.
+
+---
+
+<p align="center">✨ Curated with curiosity · Automated with GitHub Actions · Built for the AI community ✨</p>
+"""
 
 
 def canonical_json(dataset: dict[str, Any]) -> str:
@@ -265,7 +427,8 @@ def main() -> int:
     except RuntimeError as exc:
         print(f"Star Collector failed: {exc}", file=sys.stderr)
         return 1
-    print(f"Synchronization complete: data_changed={data_changed}, readme_changed={readme_changed}")
+    visible = sum(1 for record in updated["repositories"] if record.get("starred") and record.get("ai_relevant"))
+    print(f"Synchronization complete: ai_repositories={visible}, data_changed={data_changed}, readme_changed={readme_changed}")
     return 0
 
 
