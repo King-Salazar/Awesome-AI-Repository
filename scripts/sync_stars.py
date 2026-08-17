@@ -346,6 +346,8 @@ def render_managed_block(dataset: dict[str, Any]) -> str:
             [
                 f"### {title}",
                 "",
+                "| Repository | Description | Stars |",
+                "|---|---|---:|",
             ]
         )
         for record in records:
@@ -353,7 +355,9 @@ def render_managed_block(dataset: dict[str, Any]) -> str:
             name = name.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
             url = str(record.get("html_url") or "").strip()
             if url:
-                lines.append(f"- [{name}]({url})")
+                description = markdown_cell(record.get("description")) or "No description available."
+                stars = short_stars(record.get("stargazers_count"))
+                lines.append(f"| [{name}]({url}) | {description} | ⭐ {stars} |")
         lines.append("")
     lines.append(END_MARKER)
     return "\n".join(lines)
