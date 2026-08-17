@@ -11,7 +11,7 @@ Automatically synchronized from my GitHub stars.
 <!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
 
-**6 AI repositories** across **4 sectors** · Last meaningful sync: `2026-08-17T12:21:38Z`
+**6 AI repositories** across **4 sectors** · Last meaningful sync: `2026-08-17T13:13:33Z`
 
 ### 🤖 AI Agents & Automation (3)
 
@@ -25,7 +25,7 @@ Automatically synchronized from my GitHub stars.
 
 | Repository | Description | Language | Stars | Added |
 |---|---|---:|---:|---:|
-| [**diegosouzapw/OmniRoute**](https://github.com/diegosouzapw/OmniRoute) | Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors | TypeScript | ⭐ 49.5k | 2026-08-14 |
+| [**diegosouzapw/OmniRoute**](https://github.com/diegosouzapw/OmniRoute) | Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors | TypeScript | ⭐ 49.6k | 2026-08-14 |
 
 ### 🧠 Models, LLMs & Generative AI (1)
 
