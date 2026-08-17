@@ -58,10 +58,30 @@ class StarCollectorTests(unittest.TestCase):
         second = sync_stars.merge_dataset(first, items, sync_time)
 
         self.assertEqual(sync_stars.canonical_json(first), sync_stars.canonical_json(second))
-        self.assertEqual(sync_stars.render_readme(first), sync_stars.render_readme(second))
+        existing = "# Project\n\nKeep this introduction.\n"
+        self.assertEqual(sync_stars.render_readme(first, existing), sync_stars.render_readme(second, existing))
         readme = sync_stars.render_readme(first)
         self.assertIn("AI Agents & Automation", readme)
         self.assertNotIn("Public API directory", readme)
+        self.assertNotIn("Description", readme)
+        self.assertNotIn("Stars", readme)
+
+    def test_readme_updates_only_managed_links(self):
+        dataset = sync_stars.merge_dataset(sync_stars.empty_dataset(), [item(1)], "2026-01-01T00:00:00Z")
+        existing = "# My project\n\n![Banner](banner.png)\n\n<!-- STAR-COLLECTOR:START -->\nold links\n<!-- STAR-COLLECTOR:END -->\n\nFooter text.\n"
+
+        readme = sync_stars.render_readme(dataset, existing)
+
+        self.assertTrue(readme.startswith("# My project\n\n![Banner](banner.png)"))
+        self.assertTrue(readme.endswith("Footer text.\n"))
+        self.assertNotIn("old links", readme)
+        self.assertIn("- [owner/repo-1](https://github.com/owner/repo-1)", readme)
+        self.assertNotIn("AI agent toolkit", readme)
+
+    def test_readme_rejects_unpaired_marker(self):
+        dataset = sync_stars.empty_dataset()
+        with self.assertRaises(RuntimeError):
+            sync_stars.render_readme(dataset, "User text\n<!-- STAR-COLLECTOR:START -->\n")
 
 
 if __name__ == "__main__":
