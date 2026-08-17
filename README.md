@@ -1,12 +1,4 @@
-# ⭐ My Starred Repositories
 
-Automatically synchronized from my GitHub stars.
-
-![AI curated](https://img.shields.io/badge/curated-AI%20only-00A67E?style=for-the-badge)
-![Automatic sync](https://img.shields.io/badge/sync-every%2030%20minutes-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Python](https://img.shields.io/badge/powered%20by-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-> 🧭 A living map of useful AI projects, automatically filtered and organized by sector.
 
 <!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
