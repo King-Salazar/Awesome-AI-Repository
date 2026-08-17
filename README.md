@@ -1,7 +1,7 @@
 
 ## 📚 AI Repository Collection
 
-![Immagine](immagine.png)
+![Immagine](sfondo rubino.png)
 
 
 ### 🤖 AI Agents & Automation (3)
