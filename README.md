@@ -31,18 +31,3 @@
 
 <!-- STAR-COLLECTOR:END -->
 
-## 🔄 How It Works
-
-- ⭐ Reads the repositories starred by **SaPPhire999-afk**.
-- 🧠 Detects AI relevance from names, descriptions, topics, and project metadata.
-- 🗂️ Groups relevant projects into practical AI sectors.
-- 🕒 Synchronizes every 30 minutes and can also be started manually.
-- 🧾 Keeps unstarred projects in the JSON history while removing them from this list.
-
-## 🔐 Privacy & Security
-
-The GitHub token is stored only as an encrypted Actions secret. It is never written to the code, logs, README, or dataset.
-
----
-
-<p align="center">✨ Curated with curiosity · Automated with GitHub Actions · Built for the AI community ✨</p>
