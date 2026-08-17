@@ -22,6 +22,8 @@ MAX_ATTEMPTS = 4
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "starred.json"
 README_PATH = ROOT / "README.md"
+START_MARKER = "<!-- STAR-COLLECTOR:START -->"
+END_MARKER = "<!-- STAR-COLLECTOR:END -->"
 
 
 def utc_now() -> str:
@@ -196,30 +198,46 @@ def short_stars(value: Any) -> str:
     return str(number)
 
 
-def render_readme(dataset: dict[str, Any]) -> str:
+def render_managed_block(dataset: dict[str, Any], static_content: str = "") -> str:
     active = [record for record in dataset["repositories"] if record.get("starred")]
     active.sort(key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""), reverse=True)
+    visible = [record for record in active if not record.get("html_url") or record["html_url"] not in static_content]
     last_sync = dataset.get("last_sync") or "Never"
     lines = [
-        "# ⭐ My Starred Repositories",
+        START_MARKER,
+        "<!-- Automatically managed by Star Collector. -->",
         "",
-        "Automatically synchronized from my GitHub stars.",
-        "",
-        f"**Total:** {len(active)}  ",
+        f"**Synced starred repositories:** {len(active)}  ",
         f"**Last synchronization (UTC):** {last_sync}",
         "",
-        "| Repository | Description | Language | Stars | Added |",
-        "|---|---|---:|---:|---:|",
     ]
-    for record in active:
+    for record in visible:
         name = markdown_cell(record.get("full_name"))
         url = record.get("html_url") or "#"
-        lines.append(
-            f"| [{name}]({url}) | {markdown_cell(record.get('description'))} | "
-            f"{markdown_cell(record.get('language') or '—')} | {short_stars(record.get('stargazers_count'))} | "
-            f"{markdown_cell(record.get('starred_at') or 'Unknown')} |"
-        )
-    return "\n".join(lines) + "\n"
+        lines.append(f"- [{name}]({url})")
+    lines.append(END_MARKER)
+    return "\n".join(lines)
+
+
+def render_readme(dataset: dict[str, Any], existing_readme: str = "") -> str:
+    static_content = existing_readme
+    if START_MARKER in existing_readme and END_MARKER in existing_readme:
+        before, remainder = existing_readme.split(START_MARKER, 1)
+        _, after = remainder.split(END_MARKER, 1)
+        static_content = before + after
+        return before + render_managed_block(dataset, static_content) + after
+
+    block = render_managed_block(dataset, static_content)
+    repositories_header = re.search(r"(?m)^## Repositories[^\n]*\n", existing_readme)
+    if repositories_header:
+        next_header = re.search(r"(?m)^## ", existing_readme[repositories_header.end():])
+        section_end = repositories_header.end() + next_header.start() if next_header else len(existing_readme)
+        before = existing_readme[:section_end].rstrip()
+        after = existing_readme[section_end:].lstrip("\n")
+        return before + "\n\n" + block + "\n\n" + after
+
+    fallback = "# ⭐ My Starred Repositories\n\nAutomatically synchronized from my GitHub stars.\n\n"
+    return fallback + block + "\n"
 
 
 def canonical_json(dataset: dict[str, Any]) -> str:
@@ -244,9 +262,10 @@ def main() -> int:
         return 2
     try:
         existing = load_dataset()
+        existing_readme = README_PATH.read_text(encoding="utf-8") if README_PATH.exists() else ""
         updated = merge_dataset(existing, fetch_all_starred(token), utc_now())
         data_changed = atomic_write_if_changed(DATA_PATH, canonical_json(updated))
-        readme_changed = atomic_write_if_changed(README_PATH, render_readme(updated))
+        readme_changed = atomic_write_if_changed(README_PATH, render_readme(updated, existing_readme))
     except RuntimeError as exc:
         print(f"Star Collector failed: {exc}", file=sys.stderr)
         return 1
