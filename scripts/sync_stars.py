@@ -202,15 +202,16 @@ def render_managed_block(dataset: dict[str, Any], static_content: str = "") -> s
     active = [record for record in dataset["repositories"] if record.get("starred")]
     active.sort(key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""), reverse=True)
     visible = [record for record in active if not record.get("html_url") or record["html_url"] not in static_content]
-    lines = [
-        START_MARKER,
-        "<!-- Automatically managed by Star Collector. -->",
-    ]
+    lines = [START_MARKER]
     for record in visible:
         name = markdown_cell(record.get("full_name"))
         url = record.get("html_url") or "#"
-        lines.append(f"- [{name}]({url})")
-    lines.append(END_MARKER)
+        description = markdown_cell(record.get("description")) or "No description available."
+        lines.append(f"- [{name}]({url}) - {description}")
+    if visible:
+        lines[-1] += f" {END_MARKER}"
+    else:
+        lines[0] += END_MARKER
     return "\n".join(lines)
 
 
