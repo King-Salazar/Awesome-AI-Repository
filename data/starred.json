@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-17T17:17:54Z",
+  "last_sync": "2026-08-17T17:51:40Z",
   "repositories": [
     {
       "ai_relevant": false,
@@ -13,7 +13,7 @@
       "language": "Python",
       "name": "public-apis",
       "owner": "public-apis",
-      "stargazers_count": 463004,
+      "stargazers_count": 463029,
       "starred": true,
       "starred_at": "2026-08-14T09:40:20Z",
       "topics": [
@@ -32,7 +32,7 @@
         "software"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T17:17:40Z"
+      "updated_at": "2026-08-17T17:51:40Z"
     },
     {
       "ai_relevant": true,
@@ -46,7 +46,7 @@
       "language": "TypeScript",
       "name": "ai",
       "owner": "vercel",
-      "stargazers_count": 26245,
+      "stargazers_count": 26246,
       "starred": true,
       "starred_at": "2026-08-17T10:01:28Z",
       "topics": [
@@ -67,7 +67,7 @@
         "vue"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T17:00:48Z"
+      "updated_at": "2026-08-17T17:35:44Z"
     },
     {
       "ai_relevant": true,
@@ -100,7 +100,7 @@
       "language": "Shell",
       "name": "superpowers",
       "owner": "obra",
-      "stargazers_count": 273113,
+      "stargazers_count": 273127,
       "starred": true,
       "starred_at": "2026-08-14T09:40:19Z",
       "topics": [
@@ -114,7 +114,7 @@
         "superpowers"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T17:08:24Z"
+      "updated_at": "2026-08-17T17:51:19Z"
     },
     {
       "ai_relevant": true,
@@ -133,7 +133,7 @@
       "starred_at": "2026-08-14T09:40:16Z",
       "topics": [],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T17:16:04Z"
+      "updated_at": "2026-08-17T17:50:58Z"
     },
     {
       "ai_relevant": true,
@@ -147,12 +147,12 @@
       "language": "Shell",
       "name": "skills",
       "owner": "mattpocock",
-      "stargazers_count": 220113,
+      "stargazers_count": 220125,
       "starred": true,
       "starred_at": "2026-08-14T09:40:18Z",
       "topics": [],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T17:17:41Z"
+      "updated_at": "2026-08-17T17:51:05Z"
     },
     {
       "ai_relevant": true,
@@ -166,7 +166,7 @@
       "language": "TypeScript",
       "name": "OmniRoute",
       "owner": "diegosouzapw",
-      "stargazers_count": 49663,
+      "stargazers_count": 49683,
       "starred": true,
       "starred_at": "2026-08-14T09:40:17Z",
       "topics": [
@@ -192,7 +192,7 @@
         "token-saver"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T17:16:33Z"
+      "updated_at": "2026-08-17T17:51:21Z"
     },
     {
       "ai_relevant": true,
