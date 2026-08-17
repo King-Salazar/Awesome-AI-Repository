@@ -202,14 +202,9 @@ def render_managed_block(dataset: dict[str, Any], static_content: str = "") -> s
     active = [record for record in dataset["repositories"] if record.get("starred")]
     active.sort(key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""), reverse=True)
     visible = [record for record in active if not record.get("html_url") or record["html_url"] not in static_content]
-    last_sync = dataset.get("last_sync") or "Never"
     lines = [
         START_MARKER,
         "<!-- Automatically managed by Star Collector. -->",
-        "",
-        f"**Synced starred repositories:** {len(active)}  ",
-        f"**Last synchronization (UTC):** {last_sync}",
-        "",
     ]
     for record in visible:
         name = markdown_cell(record.get("full_name"))
