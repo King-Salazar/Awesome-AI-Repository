@@ -2,6 +2,9 @@
   "last_sync": "2026-08-17T10:15:56Z",
   "repositories": [
     {
+      "ai_relevant": false,
+      "category": "other",
+      "category_title": "✨ Other AI Projects",
       "description": "A collective list of free APIs",
       "full_name": "public-apis/public-apis",
       "homepage": "https://APILayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo",
@@ -32,6 +35,9 @@
       "updated_at": "2026-08-17T10:15:45Z"
     },
     {
+      "ai_relevant": true,
+      "category": "models",
+      "category_title": "🧠 Models, LLMs & Generative AI",
       "description": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
       "full_name": "vercel/ai",
       "homepage": "https://ai-sdk.dev",
@@ -64,6 +70,9 @@
       "updated_at": "2026-08-17T10:01:28Z"
     },
     {
+      "ai_relevant": true,
+      "category": "other",
+      "category_title": "✨ Other AI Projects",
       "description": null,
       "full_name": "cloudflare/ai",
       "homepage": null,
@@ -80,6 +89,9 @@
       "updated_at": "2026-08-17T10:01:33Z"
     },
     {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
       "description": "An agentic skills framework & software development methodology that works.",
       "full_name": "obra/superpowers",
       "homepage": "",
@@ -105,6 +117,9 @@
       "updated_at": "2026-08-17T10:13:32Z"
     },
     {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
       "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
       "full_name": "msitarzewski/agency-agents",
       "homepage": "",
@@ -121,6 +136,9 @@
       "updated_at": "2026-08-17T10:15:00Z"
     },
     {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
       "description": "Skills for Real Engineers. Straight from my .agents directory.",
       "full_name": "mattpocock/skills",
       "homepage": "https://aihero.dev/skills",
@@ -137,6 +155,9 @@
       "updated_at": "2026-08-17T10:15:48Z"
     },
     {
+      "ai_relevant": true,
+      "category": "coding",
+      "category_title": "💻 AI Coding & Developer Tools",
       "description": "Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors",
       "full_name": "diegosouzapw/OmniRoute",
       "homepage": "https://omniroute.online",
@@ -174,6 +195,9 @@
       "updated_at": "2026-08-17T10:14:59Z"
     },
     {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
       "description": "A curated collection of AI automation tools, workflows, and practical examples.",
       "full_name": "SaPPhire999-afk/Awesome-AI-Repos",
       "homepage": null,
@@ -190,5 +214,5 @@
       "updated_at": "2026-08-17T09:55:09Z"
     }
   ],
-  "schema_version": 1
+  "schema_version": 2
 }
