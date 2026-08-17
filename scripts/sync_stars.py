@@ -9,7 +9,6 @@ import re
 import sys
 import tempfile
 import time
-from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -328,18 +327,15 @@ def render_managed_block(dataset: dict[str, Any]) -> str:
         if record.get("starred") and record.get("ai_relevant")
     ]
     active.sort(key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""), reverse=True)
-    counts = Counter(record.get("category_title") or OTHER_CATEGORY[1] for record in active)
     category_order = [title for _, title, _ in CATEGORIES] + [OTHER_CATEGORY[1]]
 
     lines = [
         START_MARKER,
         "## 📚 AI Repository Collection",
         "",
-        f"**{len(active)} AI repositories** across **{len(counts)} sectors** · Last meaningful sync: `{dataset.get('last_sync') or 'Never'}`",
-        "",
     ]
     if not active:
-        lines.extend(["_No active AI-related starred repositories found yet._", "", END_MARKER])
+        lines.append(END_MARKER)
         return "\n".join(lines)
 
     for title in category_order:
@@ -348,54 +344,34 @@ def render_managed_block(dataset: dict[str, Any]) -> str:
             continue
         lines.extend(
             [
-                f"### {title} ({len(records)})",
+                f"### {title}",
                 "",
-                "| Repository | Description | Language | Stars | Added |",
-                "|---|---|---:|---:|---:|",
             ]
         )
         for record in records:
-            name = markdown_cell(record.get("full_name"))
-            url = record.get("html_url") or "#"
-            description = markdown_cell(record.get("description")) or "No description available."
-            language = markdown_cell(record.get("language")) or "—"
-            stars = short_stars(record.get("stargazers_count"))
-            lines.append(f"| [**{name}**]({url}) | {description} | {language} | ⭐ {stars} | {display_date(record.get('starred_at'))} |")
+            name = str(record.get("full_name") or record.get("name") or record.get("id") or "Repository")
+            name = name.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
+            url = str(record.get("html_url") or "").strip()
+            if url:
+                lines.append(f"- [{name}]({url})")
         lines.append("")
     lines.append(END_MARKER)
     return "\n".join(lines)
 
 
 def render_readme(dataset: dict[str, Any], existing_readme: str = "") -> str:
-    del existing_readme
-    return f"""# ⭐ My Starred Repositories
-
-Automatically synchronized from my GitHub stars.
-
-![AI curated](https://img.shields.io/badge/curated-AI%20only-00A67E?style=for-the-badge)
-![Automatic sync](https://img.shields.io/badge/sync-daily%20at%2009%3A00-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Python](https://img.shields.io/badge/powered%20by-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-> 🧭 A living map of useful AI projects, automatically filtered and organized by sector.
-
-{render_managed_block(dataset)}
-
-## 🔄 How It Works
-
-- ⭐ Reads the repositories starred by **SaPPhire999-afk**.
-- 🧠 Detects AI relevance from names, descriptions, topics, and project metadata.
-- 🗂️ Groups relevant projects into practical AI sectors.
-- 🕒 Synchronizes every morning at 09:00 Europe/Rome and can also be started manually.
-- 🧾 Keeps unstarred projects in the JSON history while removing them from this list.
-
-## 🔐 Privacy & Security
-
-The GitHub token is stored only as an encrypted Actions secret. It is never written to the code, logs, README, or dataset.
-
----
-
-<p align="center">✨ Curated with curiosity · Automated with GitHub Actions · Built for the AI community ✨</p>
-"""
+    block = render_managed_block(dataset)
+    has_start = START_MARKER in existing_readme
+    has_end = END_MARKER in existing_readme
+    if has_start != has_end:
+        raise RuntimeError("README has only one Star Collector marker; refusing to overwrite user content")
+    if has_start:
+        start = existing_readme.index(START_MARKER)
+        end = existing_readme.index(END_MARKER, start) + len(END_MARKER)
+        return (existing_readme[:start] + block + existing_readme[end:]).rstrip() + "\n"
+    if existing_readme.strip():
+        return existing_readme.rstrip() + "\n\n" + block + "\n"
+    return block + "\n"
 
 
 def canonical_json(dataset: dict[str, Any]) -> str:
