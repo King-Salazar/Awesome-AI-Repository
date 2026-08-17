@@ -3,7 +3,7 @@
 <!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
 
-**3 AI repositories** across **1 sectors** · Last meaningful sync: `2026-08-17T22:13:34Z`
+![Immagine](Ruby.png)
 
 ### 🤖 AI Agents & Automation (3)
 
