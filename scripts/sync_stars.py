@@ -373,7 +373,7 @@ def render_readme(dataset: dict[str, Any], existing_readme: str = "") -> str:
 Automatically synchronized from my GitHub stars.
 
 ![AI curated](https://img.shields.io/badge/curated-AI%20only-00A67E?style=for-the-badge)
-![Automatic sync](https://img.shields.io/badge/sync-every%2030%20minutes-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Automatic sync](https://img.shields.io/badge/sync-daily%20at%2009%3A00-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Python](https://img.shields.io/badge/powered%20by-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 > 🧭 A living map of useful AI projects, automatically filtered and organized by sector.
@@ -385,7 +385,7 @@ Automatically synchronized from my GitHub stars.
 - ⭐ Reads the repositories starred by **SaPPhire999-afk**.
 - 🧠 Detects AI relevance from names, descriptions, topics, and project metadata.
 - 🗂️ Groups relevant projects into practical AI sectors.
-- 🕒 Synchronizes every 30 minutes and can also be started manually.
+- 🕒 Synchronizes every morning at 09:00 Europe/Rome and can also be started manually.
 - 🧾 Keeps unstarred projects in the JSON history while removing them from this list.
 
 ## 🔐 Privacy & Security
