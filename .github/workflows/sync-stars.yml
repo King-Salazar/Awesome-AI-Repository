@@ -1,6 +1,11 @@
 name: Sync GitHub stars
 
 on:
+  push:
+    branches:
+      - MAIN-Branch
+    paths:
+      - .github/workflows/sync-stars.yml
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
