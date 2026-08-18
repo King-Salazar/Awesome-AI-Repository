@@ -79,13 +79,16 @@ class StarCollectorTests(unittest.TestCase):
         self.assertEqual(sync_stars.render_readme(first, existing), sync_stars.render_readme(second, existing))
         readme = sync_stars.render_readme(first)
         self.assertNotIn("Public API directory", readme)
-        self.assertIn("| Repository | Description | Stars |", readme)
+        self.assertIn('<table width="100%">', readme)
+        self.assertIn('<th width="25%" align="left">Repository</th>', readme)
+        self.assertIn('<th width="65%" align="left">Description</th>', readme)
+        self.assertIn('<th width="10%" align="right">Stars</th>', readme)
 
     def test_readme_always_renders_eight_colored_group_titles(self):
         dataset = sync_stars.merge_dataset(sync_stars.empty_dataset(), [item(1)], "2026-01-01T00:00:00Z")
         readme = sync_stars.render_readme(dataset)
 
-        self.assertEqual(readme.count("| Repository | Description | Stars |"), 8)
+        self.assertEqual(readme.count('<table width="100%">'), 8)
         for _, title, _ in sync_stars.CATEGORIES:
             self.assertIn(f"### {title}", readme)
         self.assertNotIn("Other AI", readme)
@@ -98,7 +101,12 @@ class StarCollectorTests(unittest.TestCase):
         self.assertTrue(readme.startswith("# My project\n\n![Banner](banner.png)"))
         self.assertTrue(readme.endswith("Footer text.\n"))
         self.assertNotIn("old links", readme)
-        self.assertIn("| [owner/repo-1](https://github.com/owner/repo-1) | AI agent toolkit | ⭐ 1 |", readme)
+        self.assertIn(
+            '<td width="25%"><a href="https://github.com/owner/repo-1">owner/repo-1</a></td>',
+            readme,
+        )
+        self.assertIn('<td width="65%">AI agent toolkit</td>', readme)
+        self.assertIn('<td width="10%" align="right">⭐ 1</td>', readme)
 
     def test_readme_rejects_unpaired_marker(self):
         with self.assertRaises(RuntimeError):
@@ -107,3 +115,4 @@ class StarCollectorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
