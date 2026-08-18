@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T10:17:28Z",
+  "last_sync": "2026-08-18T10:52:31Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -154,7 +154,7 @@
       "language": "TypeScript",
       "name": "budibase",
       "owner": "Budibase",
-      "stargazers_count": 28213,
+      "stargazers_count": 28214,
       "starred": true,
       "starred_at": "2026-08-17T22:00:37Z",
       "topics": [
@@ -179,7 +179,83 @@
         "workflow-engine"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:48:10Z"
+      "updated_at": "2026-08-18T10:39:15Z"
+    },
+    {
+      "ai_relevant": true,
+      "category": "machine-learning-computer-vision",
+      "category_title": "🟤 👁️ Machine Learning & Computer Vision",
+      "description": "AIMET is a library that provides advanced quantization and compression techniques for trained neural network models.",
+      "full_name": "qualcomm/aimet",
+      "homepage": "https://quic.github.io/aimet-pages/index.html",
+      "html_url": "https://github.com/qualcomm/aimet",
+      "id": 257688216,
+      "language": "Python",
+      "name": "aimet",
+      "owner": "qualcomm",
+      "stargazers_count": 2682,
+      "starred": true,
+      "starred_at": "2026-08-18T10:37:39Z",
+      "topics": [
+        "auto-ml",
+        "compression",
+        "deep-learning",
+        "deep-neural-networks",
+        "machine-learning",
+        "network-compression",
+        "network-quantization",
+        "open-source",
+        "opensource",
+        "pruning",
+        "quantization"
+      ],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T10:37:39Z"
+    },
+    {
+      "ai_relevant": false,
+      "category": "not-ai",
+      "category_title": "Not AI",
+      "description": "An API documentation library",
+      "full_name": "tamasfe/aide",
+      "homepage": null,
+      "html_url": "https://github.com/tamasfe/aide",
+      "id": 300062333,
+      "language": "Rust",
+      "name": "aide",
+      "owner": "tamasfe",
+      "stargazers_count": 668,
+      "starred": true,
+      "starred_at": "2026-08-18T10:37:44Z",
+      "topics": [],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T10:37:44Z"
+    },
+    {
+      "ai_relevant": true,
+      "category": "llms-prompt-engineering",
+      "category_title": "🟣 🧠 LLMs & Prompt Engineering",
+      "description": "A collection of libraries to optimise AI model performances",
+      "full_name": "nebuly-ai/optimate",
+      "homepage": "https://www.nebuly.com/",
+      "html_url": "https://github.com/nebuly-ai/optimate",
+      "id": 458588993,
+      "language": "Python",
+      "name": "optimate",
+      "owner": "nebuly-ai",
+      "stargazers_count": 8330,
+      "starred": true,
+      "starred_at": "2026-08-18T10:37:04Z",
+      "topics": [
+        "ai",
+        "analytics",
+        "artificial-intelligence",
+        "deeplearning",
+        "large-language-models",
+        "llm"
+      ],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T10:37:04Z"
     },
     {
       "ai_relevant": true,
@@ -257,9 +333,9 @@
       "language": "TypeScript",
       "name": "ai",
       "owner": "vercel",
-      "stargazers_count": 26248,
-      "starred": false,
-      "starred_at": "2026-08-17T10:01:28Z",
+      "stargazers_count": 26265,
+      "starred": true,
+      "starred_at": "2026-08-18T10:36:12Z",
       "topics": [
         "anthropic",
         "artificial-intelligence",
@@ -277,8 +353,8 @@
         "vercel",
         "vue"
       ],
-      "unstarred_at": "2026-08-17T22:13:34Z",
-      "updated_at": "2026-08-17T20:00:48Z"
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T10:36:12Z"
     },
     {
       "ai_relevant": true,
@@ -322,7 +398,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88740,
+      "stargazers_count": 88744,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -342,7 +418,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:11:02Z"
+      "updated_at": "2026-08-18T10:41:55Z"
     },
     {
       "ai_relevant": true,
@@ -362,6 +438,25 @@
       "topics": [],
       "unstarred_at": null,
       "updated_at": "2026-08-18T08:07:40Z"
+    },
+    {
+      "ai_relevant": true,
+      "category": "ai-frameworks-libraries",
+      "category_title": "🟡 🧰 AI Frameworks & Libraries",
+      "description": "Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.",
+      "full_name": "supercorp-ai/superinterface",
+      "homepage": "https://superinterface.ai",
+      "html_url": "https://github.com/supercorp-ai/superinterface",
+      "id": 739166614,
+      "language": "TypeScript",
+      "name": "superinterface",
+      "owner": "supercorp-ai",
+      "stargazers_count": 343,
+      "starred": true,
+      "starred_at": "2026-08-18T10:36:41Z",
+      "topics": [],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T10:36:42Z"
     },
     {
       "ai_relevant": true,
@@ -430,7 +525,7 @@
       "language": "Python",
       "name": "agent-zero",
       "owner": "agent0ai",
-      "stargazers_count": 18903,
+      "stargazers_count": 18904,
       "starred": true,
       "starred_at": "2026-08-18T08:09:11Z",
       "topics": [
@@ -442,7 +537,7 @@
         "zero"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:53:49Z"
+      "updated_at": "2026-08-18T10:40:43Z"
     },
     {
       "ai_relevant": true,
@@ -522,7 +617,7 @@
       "language": "Java",
       "name": "spring-ai-alibaba",
       "owner": "alibaba",
-      "stargazers_count": 10638,
+      "stargazers_count": 10639,
       "starred": true,
       "starred_at": "2026-08-18T08:09:15Z",
       "topics": [
@@ -537,7 +632,7 @@
         "workflow"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:08:13Z"
+      "updated_at": "2026-08-18T10:17:56Z"
     },
     {
       "ai_relevant": true,
