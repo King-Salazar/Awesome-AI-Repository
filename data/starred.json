@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T10:52:31Z",
+  "last_sync": "2026-08-18T11:16:01Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -333,7 +333,7 @@
       "language": "TypeScript",
       "name": "ai",
       "owner": "vercel",
-      "stargazers_count": 26265,
+      "stargazers_count": 26268,
       "starred": true,
       "starred_at": "2026-08-18T10:36:12Z",
       "topics": [
@@ -354,7 +354,7 @@
         "vue"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:36:12Z"
+      "updated_at": "2026-08-18T11:13:55Z"
     },
     {
       "ai_relevant": true,
@@ -398,7 +398,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88744,
+      "stargazers_count": 88745,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -418,7 +418,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:41:55Z"
+      "updated_at": "2026-08-18T11:11:22Z"
     },
     {
       "ai_relevant": true,
@@ -740,7 +740,7 @@
       "language": "Python",
       "name": "RAG-Anything",
       "owner": "HKUDS",
-      "stargazers_count": 22968,
+      "stargazers_count": 22969,
       "starred": true,
       "starred_at": "2026-08-18T08:08:39Z",
       "topics": [
@@ -748,7 +748,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:44:11Z"
+      "updated_at": "2026-08-18T10:58:00Z"
     },
     {
       "ai_relevant": true,
