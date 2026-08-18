@@ -62,4 +62,6 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 | [supabase/mcp](https://github.com/supabase/mcp) | Connect Supabase to your AI assistants | ⭐ 2.9k |
 | [WordPress/ai](https://github.com/WordPress/ai) | AI features and experiments for WordPress. Modular framework for testing AI capabilities. | ⭐ 318 |
 
+final ruby.png
+
 <!-- STAR-COLLECTOR:END -->
