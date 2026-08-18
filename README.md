@@ -8,7 +8,7 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 
 | Repository | Description | Stars |
 |---|---|---:|
-| <h3>🔵 🤖 AI Agents</h3> | | |
+ <h3>🔵 🤖 AI Agents</h3>
 | [alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba) | Agentic AI Framework for Java Developers | ⭐ 10.6k |
 | [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Agent Zero AI framework | ⭐ 18.9k |
 | <h3>🟣 🧠 LLMs & Prompt Engineering</h3> | | |
