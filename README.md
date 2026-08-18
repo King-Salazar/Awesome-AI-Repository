@@ -3,7 +3,7 @@
 <!-- STAR-COLLECTOR:START -->
 ## 📚 AI Repository Collection
 
-A curated collection of AI automation tools, workflows, practical examples, and repositories covering every area of artificial intelligence. This collection brings together resources for AI agents, automation frameworks, LLMs, RAG, MCP, coding assistants, no-code platforms, orchestration tools, machine learning, computer vision, voice AI, robotics, and many other AI domains. Whether you're looking for ready-to-use projects, implementation examples, or inspiration for building your own AI solutions, this repository serves as a centralized hub for discovering the best AI resources across every sector of the ecosystem.
+A curated collection of AI automation tools, workflows, practical examples, and repositories covering every area of artificial intelligence. Whether you're looking for ready-to-use projects, implementation examples, or inspiration for building your own AI solutions, this repository serves as a centralized hub for discovering the best AI resources across every sector of the ecosystem.
 ### 🤖 AI Agents & Automation
 
 | Repository | Description | Stars |
