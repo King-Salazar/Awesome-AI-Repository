@@ -25,10 +25,10 @@ All things prompt engineering
 Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack & prompt protect. Advanced Prompt Engineering papers.
 
 ⭐ **77.5k** — [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)  
-🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
+Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
 
 ⭐ **7.8k** — [RayVentura/ShortGPT](https://github.com/RayVentura/ShortGPT)  
-🚀🎬 ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation
+ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation
 
 ---
 
@@ -78,7 +78,7 @@ Use API to call the music generation AI of suno.ai, and easily integrate it into
 ### 🟤 👁️ Machine Learning & Computer Vision
 
 ⭐ **24.8k** — [trekhleb/homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning)  
-🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained.
+Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained.
 
 ⭐ **5.7k** — [wepe/MachineLearning](https://github.com/wepe/MachineLearning)  
 Basic Machine Learning and Deep Learning
