@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T11:48:02Z",
+  "last_sync": "2026-08-18T12:23:04Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -94,7 +94,7 @@
       "language": "Python",
       "name": "automagica",
       "owner": "automagica",
-      "stargazers_count": 3095,
+      "stargazers_count": 3096,
       "starred": true,
       "starred_at": "2026-08-18T07:20:45Z",
       "topics": [
@@ -113,7 +113,7 @@
         "web-automation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T07:20:46Z"
+      "updated_at": "2026-08-18T11:55:21Z"
     },
     {
       "ai_relevant": true,
@@ -302,7 +302,7 @@
       "language": "MDX",
       "name": "Prompt-Engineering-Guide",
       "owner": "dair-ai",
-      "stargazers_count": 77544,
+      "stargazers_count": 77545,
       "starred": true,
       "starred_at": "2026-08-18T08:07:27Z",
       "topics": [
@@ -319,7 +319,7 @@
         "rag"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:05:46Z"
+      "updated_at": "2026-08-18T11:57:02Z"
     },
     {
       "ai_relevant": true,
@@ -398,7 +398,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88751,
+      "stargazers_count": 88753,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -418,7 +418,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T11:41:09Z"
+      "updated_at": "2026-08-18T12:17:29Z"
     },
     {
       "ai_relevant": true,
@@ -537,7 +537,7 @@
         "zero"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:40:43Z"
+      "updated_at": "2026-08-18T11:50:45Z"
     },
     {
       "ai_relevant": true,
@@ -551,7 +551,7 @@
       "language": "Jupyter Notebook",
       "name": "RAG_Techniques",
       "owner": "NirDiamant",
-      "stargazers_count": 29095,
+      "stargazers_count": 29096,
       "starred": true,
       "starred_at": "2026-08-18T08:08:45Z",
       "topics": [
@@ -575,7 +575,7 @@
         "vector-database"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:45:27Z"
+      "updated_at": "2026-08-18T12:12:14Z"
     },
     {
       "ai_relevant": false,
@@ -603,7 +603,7 @@
         "testing"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T11:35:58Z"
+      "updated_at": "2026-08-18T12:09:42Z"
     },
     {
       "ai_relevant": true,
