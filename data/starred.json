@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-17T22:13:34Z",
+  "last_sync": "2026-08-18T07:26:28Z",
   "repositories": [
     {
       "ai_relevant": false,
@@ -38,6 +38,39 @@
       "ai_relevant": true,
       "category": "agents",
       "category_title": "🤖 AI Agents & Automation",
+      "description": "AI-powered Smart Robotic Process Automation 🤖",
+      "full_name": "automagica/automagica",
+      "homepage": "https://automagica.com",
+      "html_url": "https://github.com/automagica/automagica",
+      "id": 120768790,
+      "language": "Python",
+      "name": "automagica",
+      "owner": "automagica",
+      "stargazers_count": 3095,
+      "starred": true,
+      "starred_at": "2026-08-18T07:20:45Z",
+      "topics": [
+        "ai",
+        "autoit",
+        "automagica",
+        "automagica-portal",
+        "automation",
+        "desktop-automation",
+        "macros",
+        "office-automation",
+        "python",
+        "robot",
+        "rpa",
+        "uipath",
+        "web-automation"
+      ],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T07:20:46Z"
+    },
+    {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
       "description": "AI agents, automations and apps that run your operations. Model agnostic.",
       "full_name": "Budibase/budibase",
       "homepage": "https://budibase.com",
@@ -46,7 +79,7 @@
       "language": "TypeScript",
       "name": "budibase",
       "owner": "Budibase",
-      "stargazers_count": 28208,
+      "stargazers_count": 28210,
       "starred": true,
       "starred_at": "2026-08-17T22:00:37Z",
       "topics": [
@@ -71,7 +104,7 @@
         "workflow-engine"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T22:00:38Z"
+      "updated_at": "2026-08-18T05:06:42Z"
     },
     {
       "ai_relevant": true,
@@ -85,7 +118,7 @@
       "language": "TypeScript",
       "name": "activepieces",
       "owner": "activepieces",
-      "stargazers_count": 23853,
+      "stargazers_count": 23862,
       "starred": true,
       "starred_at": "2026-08-17T21:59:41Z",
       "topics": [
@@ -104,7 +137,7 @@
         "workflows"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-17T21:59:41Z"
+      "updated_at": "2026-08-18T07:01:01Z"
     },
     {
       "ai_relevant": true,
@@ -140,6 +173,64 @@
       ],
       "unstarred_at": "2026-08-17T22:13:34Z",
       "updated_at": "2026-08-17T20:00:48Z"
+    },
+    {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
+      "description": "🚀🎬 ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation",
+      "full_name": "RayVentura/ShortGPT",
+      "homepage": "https://short-gpt-dcs.vercel.app",
+      "html_url": "https://github.com/RayVentura/ShortGPT",
+      "id": 659412092,
+      "language": "Python",
+      "name": "ShortGPT",
+      "owner": "RayVentura",
+      "stargazers_count": 7840,
+      "starred": true,
+      "starred_at": "2026-08-18T07:21:15Z",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "automation",
+        "autonomous-agents",
+        "content",
+        "gpt-4",
+        "openai",
+        "python",
+        "video",
+        "video-editing"
+      ],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T07:21:16Z"
+    },
+    {
+      "ai_relevant": true,
+      "category": "agents",
+      "category_title": "🤖 AI Agents & Automation",
+      "description": "AI-powered, vision-driven UI automation for every platform.",
+      "full_name": "web-infra-dev/midscene",
+      "homepage": "https://midscenejs.com",
+      "html_url": "https://github.com/web-infra-dev/midscene",
+      "id": 832452447,
+      "language": "TypeScript",
+      "name": "midscene",
+      "owner": "web-infra-dev",
+      "stargazers_count": 14600,
+      "starred": true,
+      "starred_at": "2026-08-18T07:20:08Z",
+      "topics": [
+        "ai",
+        "ai-test",
+        "browser-use",
+        "computer-use",
+        "gpt-operator",
+        "javascript",
+        "phone-use",
+        "testing"
+      ],
+      "unstarred_at": null,
+      "updated_at": "2026-08-18T07:26:26Z"
     },
     {
       "ai_relevant": true,
