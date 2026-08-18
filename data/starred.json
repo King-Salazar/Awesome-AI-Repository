@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T11:16:01Z",
+  "last_sync": "2026-08-18T11:48:02Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -127,7 +127,7 @@
       "language": "Jupyter Notebook",
       "name": "homemade-machine-learning",
       "owner": "trekhleb",
-      "stargazers_count": 24762,
+      "stargazers_count": 24763,
       "starred": true,
       "starred_at": "2026-08-18T08:10:25Z",
       "topics": [
@@ -140,7 +140,7 @@
         "python"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:38:14Z"
+      "updated_at": "2026-08-18T11:47:33Z"
     },
     {
       "ai_relevant": true,
@@ -179,7 +179,7 @@
         "workflow-engine"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:39:15Z"
+      "updated_at": "2026-08-18T11:20:34Z"
     },
     {
       "ai_relevant": true,
@@ -269,7 +269,7 @@
       "language": "TypeScript",
       "name": "activepieces",
       "owner": "activepieces",
-      "stargazers_count": 23866,
+      "stargazers_count": 23867,
       "starred": true,
       "starred_at": "2026-08-17T21:59:41Z",
       "topics": [
@@ -288,7 +288,7 @@
         "workflows"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:04:35Z"
+      "updated_at": "2026-08-18T11:41:25Z"
     },
     {
       "ai_relevant": true,
@@ -398,7 +398,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88745,
+      "stargazers_count": 88751,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -418,7 +418,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T11:11:22Z"
+      "updated_at": "2026-08-18T11:41:09Z"
     },
     {
       "ai_relevant": true,
@@ -589,7 +589,7 @@
       "language": "TypeScript",
       "name": "midscene",
       "owner": "web-infra-dev",
-      "stargazers_count": 14604,
+      "stargazers_count": 14605,
       "starred": true,
       "starred_at": "2026-08-18T07:20:08Z",
       "topics": [
@@ -603,7 +603,7 @@
         "testing"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:04:33Z"
+      "updated_at": "2026-08-18T11:35:58Z"
     },
     {
       "ai_relevant": true,
