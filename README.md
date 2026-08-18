@@ -2,11 +2,11 @@
 
 <!-- STAR-COLLECTOR:START -->
 
-## 📚 AI Repository Collection
+# 📚 AI Repository Collection
 
 A curated collection of AI automation tools, workflows, and practical examples, organized across key areas including AI Agents, LLMs & Prompt Engineering, RAG & Knowledge Systems, Automation & Workflows, AI Frameworks & Libraries, Generative AI, Machine Learning & Computer Vision, and Infrastructure & Deployment—including MCP, APIs, MLOps, Local AI, and model serving.
 
-### 🔵 🤖 AI Agents
+## 🔵 🤖 AI Agents
 
 [alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba) — ⭐ **10.6k**  
 Agentic AI Framework for Java Developers
@@ -16,7 +16,7 @@ Agent Zero AI framework
 
 ---
 
-### 🟣 🧠 LLMs & Prompt Engineering
+## 🟣 🧠 LLMs & Prompt Engineering
 
 [microsoft/promptbase](https://github.com/microsoft/promptbase) — ⭐ **5.8k**  
 All things prompt engineering
@@ -32,7 +32,7 @@ Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Promp
 
 ---
 
-### 🟢 🔎 RAG & Knowledge Systems
+## 🟢 🔎 RAG & Knowledge Systems
 
 [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) — ⭐ **29.1k**  
 This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial.
@@ -45,7 +45,7 @@ RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine tha
 
 ---
 
-### 🟠 ⚙️ Automation & Workflows
+## 🟠 ⚙️ Automation & Workflows
 
 [BrowserMCP/mcp](https://github.com/BrowserMCP/mcp) — ⭐ **7k**  
 Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser.
@@ -64,18 +64,18 @@ AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) �
 
 ---
 
-### 🟡 🧰 AI Frameworks & Libraries
+## 🟡 🧰 AI Frameworks & Libraries
 
 ---
 
-### 🔴 🎨 Generative AI (Image, Video, Audio, 3D)
+## 🔴 🎨 Generative AI (Image, Video, Audio, 3D)
 
 [gcui-art/suno-api](https://github.com/gcui-art/suno-api) — ⭐ **3.2k**  
 Use API to call the music generation AI of suno.ai, and easily integrate it into agents like GPTs.
 
 ---
 
-### 🟤 👁️ Machine Learning & Computer Vision
+## 🟤 👁️ Machine Learning & Computer Vision
 
 [trekhleb/homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning) — ⭐ **24.8k**  
 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained.
@@ -85,7 +85,7 @@ Basic Machine Learning and Deep Learning
 
 ---
 
-### ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
+## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
 [supabase/mcp](https://github.com/supabase/mcp) — ⭐ **2.9k**  
 Connect Supabase to your AI assistants
