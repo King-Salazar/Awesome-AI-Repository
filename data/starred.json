@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T12:23:04Z",
+  "last_sync": "2026-08-18T12:48:51Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -154,7 +154,7 @@
       "language": "TypeScript",
       "name": "budibase",
       "owner": "Budibase",
-      "stargazers_count": 28214,
+      "stargazers_count": 28215,
       "starred": true,
       "starred_at": "2026-08-17T22:00:37Z",
       "topics": [
@@ -179,7 +179,7 @@
         "workflow-engine"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T11:20:34Z"
+      "updated_at": "2026-08-18T12:28:17Z"
     },
     {
       "ai_relevant": true,
@@ -302,7 +302,7 @@
       "language": "MDX",
       "name": "Prompt-Engineering-Guide",
       "owner": "dair-ai",
-      "stargazers_count": 77545,
+      "stargazers_count": 77547,
       "starred": true,
       "starred_at": "2026-08-18T08:07:27Z",
       "topics": [
@@ -319,7 +319,7 @@
         "rag"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T11:57:02Z"
+      "updated_at": "2026-08-18T12:44:13Z"
     },
     {
       "ai_relevant": true,
@@ -398,7 +398,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88753,
+      "stargazers_count": 88755,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -418,7 +418,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T12:17:29Z"
+      "updated_at": "2026-08-18T12:46:24Z"
     },
     {
       "ai_relevant": true,
@@ -603,7 +603,7 @@
         "testing"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T12:09:42Z"
+      "updated_at": "2026-08-18T12:37:50Z"
     },
     {
       "ai_relevant": true,
@@ -617,7 +617,7 @@
       "language": "Java",
       "name": "spring-ai-alibaba",
       "owner": "alibaba",
-      "stargazers_count": 10639,
+      "stargazers_count": 10640,
       "starred": true,
       "starred_at": "2026-08-18T08:09:15Z",
       "topics": [
@@ -632,7 +632,7 @@
         "workflow"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T10:17:56Z"
+      "updated_at": "2026-08-18T12:42:32Z"
     },
     {
       "ai_relevant": true,
