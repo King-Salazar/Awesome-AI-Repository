@@ -9,9 +9,6 @@
 |---|---|---:|
 | [alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba) | Agentic AI Framework for Java Developers | ⭐ 10.6k |
 | [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Agent Zero AI framework | ⭐ 18.9k |
-| [web-infra-dev/midscene](https://github.com/web-infra-dev/midscene) | AI-powered, vision-driven UI automation for every platform. | ⭐ 14.6k |
-
-
 
 ### 🟣 🧠 LLMs & Prompt Engineering
 

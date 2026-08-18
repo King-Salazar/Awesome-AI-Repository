@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T08:22:47Z",
+  "last_sync": "2026-08-18T09:00:28Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -127,7 +127,7 @@
       "language": "Jupyter Notebook",
       "name": "homemade-machine-learning",
       "owner": "trekhleb",
-      "stargazers_count": 24761,
+      "stargazers_count": 24762,
       "starred": true,
       "starred_at": "2026-08-18T08:10:25Z",
       "topics": [
@@ -140,7 +140,7 @@
         "python"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:10:25Z"
+      "updated_at": "2026-08-18T08:38:14Z"
     },
     {
       "ai_relevant": true,
@@ -193,7 +193,7 @@
       "language": "TypeScript",
       "name": "activepieces",
       "owner": "activepieces",
-      "stargazers_count": 23863,
+      "stargazers_count": 23864,
       "starred": true,
       "starred_at": "2026-08-17T21:59:41Z",
       "topics": [
@@ -212,7 +212,7 @@
         "workflows"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:21:55Z"
+      "updated_at": "2026-08-18T08:51:55Z"
     },
     {
       "ai_relevant": true,
@@ -243,7 +243,7 @@
         "rag"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:07:27Z"
+      "updated_at": "2026-08-18T08:26:13Z"
     },
     {
       "ai_relevant": true,
@@ -322,7 +322,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88730,
+      "stargazers_count": 88733,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -342,7 +342,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:17:59Z"
+      "updated_at": "2026-08-18T08:50:11Z"
     },
     {
       "ai_relevant": true,
@@ -430,7 +430,7 @@
       "language": "Python",
       "name": "agent-zero",
       "owner": "agent0ai",
-      "stargazers_count": 18902,
+      "stargazers_count": 18903,
       "starred": true,
       "starred_at": "2026-08-18T08:09:11Z",
       "topics": [
@@ -442,7 +442,7 @@
         "zero"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:09:11Z"
+      "updated_at": "2026-08-18T08:53:49Z"
     },
     {
       "ai_relevant": true,
@@ -456,7 +456,7 @@
       "language": "Jupyter Notebook",
       "name": "RAG_Techniques",
       "owner": "NirDiamant",
-      "stargazers_count": 29092,
+      "stargazers_count": 29094,
       "starred": true,
       "starred_at": "2026-08-18T08:08:45Z",
       "topics": [
@@ -480,13 +480,13 @@
         "vector-database"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:12:18Z"
+      "updated_at": "2026-08-18T08:59:09Z"
     },
     {
-      "ai_relevant": true,
-      "category": "ai-agents",
-      "category_title": "🔵 🤖 AI Agents",
-      "description": "AI-powered, vision-driven UI automation for every platform.",
+      "ai_relevant": false,
+      "category": "not-ai",
+      "category_title": "Not AI",
+      "description": "GUI Agent for E2E Testing",
       "full_name": "web-infra-dev/midscene",
       "homepage": "https://midscenejs.com",
       "html_url": "https://github.com/web-infra-dev/midscene",
@@ -494,21 +494,21 @@
       "language": "TypeScript",
       "name": "midscene",
       "owner": "web-infra-dev",
-      "stargazers_count": 14601,
+      "stargazers_count": 14602,
       "starred": true,
       "starred_at": "2026-08-18T07:20:08Z",
       "topics": [
-        "ai",
-        "ai-test",
         "browser-use",
         "computer-use",
+        "e2e-testing",
         "gpt-operator",
+        "gui-agent",
         "javascript",
         "phone-use",
         "testing"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:21:04Z"
+      "updated_at": "2026-08-18T08:57:33Z"
     },
     {
       "ai_relevant": true,
@@ -522,7 +522,7 @@
       "language": "Java",
       "name": "spring-ai-alibaba",
       "owner": "alibaba",
-      "stargazers_count": 10636,
+      "stargazers_count": 10637,
       "starred": true,
       "starred_at": "2026-08-18T08:09:15Z",
       "topics": [
@@ -537,7 +537,7 @@
         "workflow"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:14:15Z"
+      "updated_at": "2026-08-18T08:41:08Z"
     },
     {
       "ai_relevant": true,
@@ -645,7 +645,7 @@
       "language": "Python",
       "name": "RAG-Anything",
       "owner": "HKUDS",
-      "stargazers_count": 22963,
+      "stargazers_count": 22967,
       "starred": true,
       "starred_at": "2026-08-18T08:08:39Z",
       "topics": [
@@ -653,7 +653,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:08:40Z"
+      "updated_at": "2026-08-18T08:57:55Z"
     },
     {
       "ai_relevant": true,
