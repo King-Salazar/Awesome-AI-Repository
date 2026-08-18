@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T09:00:28Z",
+  "last_sync": "2026-08-18T09:55:14Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -65,7 +65,7 @@
       "language": "Python",
       "name": "Airtest",
       "owner": "AirtestProject",
-      "stargazers_count": 9513,
+      "stargazers_count": 9514,
       "starred": true,
       "starred_at": "2026-08-18T08:09:20Z",
       "topics": [
@@ -80,7 +80,7 @@
         "windows"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:09:20Z"
+      "updated_at": "2026-08-18T09:21:06Z"
     },
     {
       "ai_relevant": true,
@@ -179,7 +179,7 @@
         "workflow-engine"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:16:38Z"
+      "updated_at": "2026-08-18T09:48:10Z"
     },
     {
       "ai_relevant": true,
@@ -193,7 +193,7 @@
       "language": "TypeScript",
       "name": "activepieces",
       "owner": "activepieces",
-      "stargazers_count": 23864,
+      "stargazers_count": 23866,
       "starred": true,
       "starred_at": "2026-08-17T21:59:41Z",
       "topics": [
@@ -212,7 +212,7 @@
         "workflows"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:51:55Z"
+      "updated_at": "2026-08-18T09:46:41Z"
     },
     {
       "ai_relevant": true,
@@ -226,7 +226,7 @@
       "language": "MDX",
       "name": "Prompt-Engineering-Guide",
       "owner": "dair-ai",
-      "stargazers_count": 77541,
+      "stargazers_count": 77543,
       "starred": true,
       "starred_at": "2026-08-18T08:07:27Z",
       "topics": [
@@ -243,7 +243,7 @@
         "rag"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:26:13Z"
+      "updated_at": "2026-08-18T09:47:39Z"
     },
     {
       "ai_relevant": true,
@@ -292,7 +292,7 @@
       "language": "Python",
       "name": "ShortGPT",
       "owner": "RayVentura",
-      "stargazers_count": 7841,
+      "stargazers_count": 7842,
       "starred": true,
       "starred_at": "2026-08-18T07:21:15Z",
       "topics": [
@@ -308,7 +308,7 @@
         "video-editing"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:13:44Z"
+      "updated_at": "2026-08-18T09:39:01Z"
     },
     {
       "ai_relevant": true,
@@ -322,7 +322,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88733,
+      "stargazers_count": 88737,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -342,7 +342,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:50:11Z"
+      "updated_at": "2026-08-18T09:42:14Z"
     },
     {
       "ai_relevant": true,
@@ -390,7 +390,7 @@
         "prompt-engineering"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:18:08Z"
+      "updated_at": "2026-08-18T09:06:03Z"
     },
     {
       "ai_relevant": true,
@@ -456,7 +456,7 @@
       "language": "Jupyter Notebook",
       "name": "RAG_Techniques",
       "owner": "NirDiamant",
-      "stargazers_count": 29094,
+      "stargazers_count": 29095,
       "starred": true,
       "starred_at": "2026-08-18T08:08:45Z",
       "topics": [
@@ -480,7 +480,7 @@
         "vector-database"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:59:09Z"
+      "updated_at": "2026-08-18T09:45:27Z"
     },
     {
       "ai_relevant": false,
@@ -522,7 +522,7 @@
       "language": "Java",
       "name": "spring-ai-alibaba",
       "owner": "alibaba",
-      "stargazers_count": 10637,
+      "stargazers_count": 10638,
       "starred": true,
       "starred_at": "2026-08-18T08:09:15Z",
       "topics": [
@@ -537,7 +537,7 @@
         "workflow"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:41:08Z"
+      "updated_at": "2026-08-18T09:08:13Z"
     },
     {
       "ai_relevant": true,
@@ -589,7 +589,7 @@
       "language": "TypeScript",
       "name": "mcp",
       "owner": "BrowserMCP",
-      "stargazers_count": 6983,
+      "stargazers_count": 6984,
       "starred": true,
       "starred_at": "2026-08-18T08:13:14Z",
       "topics": [
@@ -601,7 +601,7 @@
         "mcp-server"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:13:14Z"
+      "updated_at": "2026-08-18T09:55:11Z"
     },
     {
       "ai_relevant": true,
@@ -645,7 +645,7 @@
       "language": "Python",
       "name": "RAG-Anything",
       "owner": "HKUDS",
-      "stargazers_count": 22967,
+      "stargazers_count": 22968,
       "starred": true,
       "starred_at": "2026-08-18T08:08:39Z",
       "topics": [
@@ -653,7 +653,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:57:55Z"
+      "updated_at": "2026-08-18T09:44:11Z"
     },
     {
       "ai_relevant": true,
