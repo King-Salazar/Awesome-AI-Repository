@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+from html import escape
 import os
 import re
 import sys
@@ -305,10 +306,9 @@ def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, A
     }
 
 
-def markdown_cell(value: Any) -> str:
+def html_cell(value: Any) -> str:
     text = "" if value is None else str(value)
-    text = " ".join(text.split())
-    return text.replace("\\", "\\\\").replace("|", "\\|")
+    return escape(" ".join(text.split()))
 
 
 def short_stars(value: Any) -> str:
@@ -336,16 +336,31 @@ def render_managed_block(dataset: dict[str, Any]) -> str:
     for key, title, _ in CATEGORIES:
         records = [record for record in active if record.get("category") == key]
         lines.extend([
-            f"### {title}", "", "| Repository | Description | Stars |", "|---|---|---:|",
+            f"### {title}",
+            "",
+            '<table width="100%">',
+            "  <thead>",
+            "    <tr>",
+            '      <th width="25%" align="left">Repository</th>',
+            '      <th width="65%" align="left">Description</th>',
+            '      <th width="10%" align="right">Stars</th>',
+            "    </tr>",
+            "  </thead>",
+            "  <tbody>",
         ])
         for record in records:
             name = str(record.get("full_name") or record.get("name") or record.get("id") or "Repository")
-            name = name.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
             url = str(record.get("html_url") or "").strip()
             if url:
-                description = markdown_cell(record.get("description")) or "No description available."
-                lines.append(f"| [{name}]({url}) | {description} | ⭐ {short_stars(record.get('stargazers_count'))} |")
-        lines.append("")
+                description = html_cell(record.get("description")) or "No description available."
+                lines.extend([
+                    "    <tr>",
+                    f'      <td width="25%"><a href="{escape(url, quote=True)}">{escape(name)}</a></td>',
+                    f'      <td width="65%">{description}</td>',
+                    f'      <td width="10%" align="right">⭐ {short_stars(record.get("stargazers_count"))}</td>',
+                    "    </tr>",
+                ])
+        lines.extend(["  </tbody>", "</table>", ""])
     lines.append(END_MARKER)
     return "\n".join(lines)
 
@@ -401,3 +416,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
