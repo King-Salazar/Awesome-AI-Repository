@@ -6,7 +6,7 @@
 
 A curated collection of AI automation tools, workflows, and practical examples, organized across key areas including AI Agents, LLMs & Prompt Engineering, RAG & Knowledge Systems, Automation & Workflows, AI Frameworks & Libraries, Generative AI, Machine Learning & Computer Vision, and Infrastructure & Deployment—including MCP, APIs, MLOps, Local AI, and model serving.
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 ## 🔵 🤖 AI Agents
 
@@ -16,7 +16,7 @@ Agentic AI Framework for Java Developers
 [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) — ⭐ **18.9k**  
 Agent Zero AI framework
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## 🟣 🧠 LLMs & Prompt Engineering
