@@ -32,7 +32,6 @@ class StarCollectorTests(unittest.TestCase):
         previous = sync_stars.merge_dataset(sync_stars.empty_dataset(), [item(999)], "2026-01-01T00:00:00Z")
         incoming = [item(repo_id) for repo_id in range(1, 106)]
         incoming.extend([item(42, description="AI coding agent"), item(500, missing=True)])
-
         result = sync_stars.merge_dataset(previous, incoming, "2026-01-02T00:00:00Z")
         by_id = {record["id"]: record for record in result["repositories"]}
 
@@ -43,13 +42,31 @@ class StarCollectorTests(unittest.TestCase):
         self.assertEqual(by_id[42]["description"], "AI coding agent")
         self.assertEqual(by_id[500]["name"], "")
 
-    def test_ai_filter_and_categories(self):
-        ai = sync_stars.normalize_record(item(1, description="RAG vector database for LLM apps"), None, "2026-01-01T00:00:00Z")
-        unrelated = sync_stars.normalize_record(item(2, description="A collection of public weather APIs", topics=["api"]), None, "2026-01-01T00:00:00Z")
+    def test_all_eight_categories(self):
+        examples = {
+            "ai-agents": "Multi-agent AI system with autonomous agents",
+            "llms-prompt-engineering": "LLM prompt engineering toolkit",
+            "rag-knowledge-systems": "RAG vector database for LLM apps",
+            "automation-workflows": "AI workflow automation with n8n",
+            "ai-frameworks-libraries": "AI SDK and library for applications",
+            "generative-ai": "Generative AI image generation with diffusion",
+            "machine-learning-computer-vision": "Machine learning computer vision with PyTorch",
+            "infrastructure-deployment": "MLOps model serving and local LLM deployment",
+        }
+        for repo_id, (expected, description) in enumerate(examples.items(), start=1):
+            with self.subTest(expected=expected):
+                record = sync_stars.normalize_record(item(repo_id, description=description), None, "2026-01-01T00:00:00Z")
+                self.assertTrue(record["ai_relevant"])
+                self.assertEqual(record["category"], expected)
 
-        self.assertTrue(ai["ai_relevant"])
-        self.assertEqual(ai["category"], "rag")
+    def test_non_ai_repository_is_excluded(self):
+        unrelated = sync_stars.normalize_record(
+            item(2, description="A collection of public weather APIs", topics=["api"]),
+            None,
+            "2026-01-01T00:00:00Z",
+        )
         self.assertFalse(unrelated["ai_relevant"])
+        self.assertEqual(unrelated["category"], "not-ai")
 
     def test_controlled_sync_is_byte_identical(self):
         sync_time = "2026-01-01T00:00:00Z"
@@ -61,16 +78,21 @@ class StarCollectorTests(unittest.TestCase):
         existing = "# Project\n\nKeep this introduction.\n"
         self.assertEqual(sync_stars.render_readme(first, existing), sync_stars.render_readme(second, existing))
         readme = sync_stars.render_readme(first)
-        self.assertIn("AI Agents & Automation", readme)
         self.assertNotIn("Public API directory", readme)
         self.assertIn("| Repository | Description | Stars |", readme)
-        self.assertNotIn("Language", readme)
-        self.assertNotIn("Added", readme)
 
-    def test_readme_updates_only_managed_links(self):
+    def test_readme_always_renders_eight_colored_group_titles(self):
+        dataset = sync_stars.merge_dataset(sync_stars.empty_dataset(), [item(1)], "2026-01-01T00:00:00Z")
+        readme = sync_stars.render_readme(dataset)
+
+        self.assertEqual(readme.count("| Repository | Description | Stars |"), 8)
+        for _, title, _ in sync_stars.CATEGORIES:
+            self.assertIn(f"### {title}", readme)
+        self.assertNotIn("Other AI", readme)
+
+    def test_readme_updates_only_managed_block(self):
         dataset = sync_stars.merge_dataset(sync_stars.empty_dataset(), [item(1)], "2026-01-01T00:00:00Z")
         existing = "# My project\n\n![Banner](banner.png)\n\n<!-- STAR-COLLECTOR:START -->\nold links\n<!-- STAR-COLLECTOR:END -->\n\nFooter text.\n"
-
         readme = sync_stars.render_readme(dataset, existing)
 
         self.assertTrue(readme.startswith("# My project\n\n![Banner](banner.png)"))
@@ -79,9 +101,8 @@ class StarCollectorTests(unittest.TestCase):
         self.assertIn("| [owner/repo-1](https://github.com/owner/repo-1) | AI agent toolkit | ⭐ 1 |", readme)
 
     def test_readme_rejects_unpaired_marker(self):
-        dataset = sync_stars.empty_dataset()
         with self.assertRaises(RuntimeError):
-            sync_stars.render_readme(dataset, "User text\n<!-- STAR-COLLECTOR:START -->\n")
+            sync_stars.render_readme(sync_stars.empty_dataset(), "User text\n<!-- STAR-COLLECTOR:START -->\n")
 
 
 if __name__ == "__main__":
