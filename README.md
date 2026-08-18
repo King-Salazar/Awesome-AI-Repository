@@ -55,6 +55,9 @@ Browser MCP is a Model Context Provider (MCP) server that allows AI applications
 https://github.com/automagica/automagica — ⭐ **3.1k**  
 AI-powered Smart Robotic Process Automation 🤖
 
+https://github.com/web-infra-dev/midscene — ⭐ **14.6k**  
+Vision-driven GUI agent for natural-language E2E testing and automation across web, mobile, and desktop interfaces.
+
 https://github.com/lucaswalter/n8n-ai-automations — ⭐ **1.6k**  
 Collection of n8n workflows, n8n templates, AI automations, and AI agents created for The Recap AI YouTube channel and the AI Automation Mastery free Skool community.
 
