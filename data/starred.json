@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-08-18T09:55:14Z",
+  "last_sync": "2026-08-18T10:17:28Z",
   "repositories": [
     {
       "ai_relevant": true,
@@ -212,7 +212,7 @@
         "workflows"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:46:41Z"
+      "updated_at": "2026-08-18T10:04:35Z"
     },
     {
       "ai_relevant": true,
@@ -226,7 +226,7 @@
       "language": "MDX",
       "name": "Prompt-Engineering-Guide",
       "owner": "dair-ai",
-      "stargazers_count": 77543,
+      "stargazers_count": 77544,
       "starred": true,
       "starred_at": "2026-08-18T08:07:27Z",
       "topics": [
@@ -243,7 +243,7 @@
         "rag"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:47:39Z"
+      "updated_at": "2026-08-18T10:05:46Z"
     },
     {
       "ai_relevant": true,
@@ -322,7 +322,7 @@
       "language": "Go",
       "name": "ragflow",
       "owner": "infiniflow",
-      "stargazers_count": 88737,
+      "stargazers_count": 88740,
       "starred": true,
       "starred_at": "2026-08-18T08:08:33Z",
       "topics": [
@@ -342,7 +342,7 @@
         "retrieval-augmented-generation"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:42:14Z"
+      "updated_at": "2026-08-18T10:11:02Z"
     },
     {
       "ai_relevant": true,
@@ -494,7 +494,7 @@
       "language": "TypeScript",
       "name": "midscene",
       "owner": "web-infra-dev",
-      "stargazers_count": 14602,
+      "stargazers_count": 14604,
       "starred": true,
       "starred_at": "2026-08-18T07:20:08Z",
       "topics": [
@@ -508,7 +508,7 @@
         "testing"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T08:57:33Z"
+      "updated_at": "2026-08-18T10:04:33Z"
     },
     {
       "ai_relevant": true,
@@ -589,7 +589,7 @@
       "language": "TypeScript",
       "name": "mcp",
       "owner": "BrowserMCP",
-      "stargazers_count": 6984,
+      "stargazers_count": 6985,
       "starred": true,
       "starred_at": "2026-08-18T08:13:14Z",
       "topics": [
@@ -601,7 +601,7 @@
         "mcp-server"
       ],
       "unstarred_at": null,
-      "updated_at": "2026-08-18T09:55:11Z"
+      "updated_at": "2026-08-18T10:12:28Z"
     },
     {
       "ai_relevant": true,
