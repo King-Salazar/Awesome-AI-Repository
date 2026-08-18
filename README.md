@@ -11,6 +11,8 @@
 | [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Agent Zero AI framework | ⭐ 18.9k |
 | [web-infra-dev/midscene](https://github.com/web-infra-dev/midscene) | AI-powered, vision-driven UI automation for every platform. | ⭐ 14.6k |
 
+
+
 ### 🟣 🧠 LLMs & Prompt Engineering
 
 | Repository | Description | Stars |
