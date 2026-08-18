@@ -25,81 +25,95 @@ README_PATH = ROOT / "README.md"
 START_MARKER = "<!-- STAR-COLLECTOR:START -->"
 END_MARKER = "<!-- STAR-COLLECTOR:END -->"
 
+# Order is also the deterministic display order. The colored circle and subject
+# icon keep group headings scannable in both light and dark GitHub themes.
 CATEGORIES: tuple[tuple[str, str, tuple[str, ...]], ...] = (
     (
-        "agents",
-        "🤖 AI Agents & Automation",
-        ("agent", "agents", "agentic", "multi agent", "automation", "workflow", "mcp", "computer use", "autonomous"),
+        "ai-agents",
+        "🔵 🤖 AI Agents",
+        (
+            "ai agent", "ai agents", "agentic", "autonomous agent",
+            "multi agent", "multiagent", "computer use", "browser use",
+            "crewai", "autogen", "swarm", "agent framework",
+        ),
     ),
     (
-        "coding",
-        "💻 AI Coding & Developer Tools",
-        ("coding", "code generation", "developer tool", "copilot", "cursor", "aider", "claude code", "codex", "software engineering"),
+        "llms-prompt-engineering",
+        "🟣 🧠 LLMs & Prompt Engineering",
+        (
+            "llm", "large language model", "language model", "prompt engineering",
+            "prompting", "prompt template", "transformer", "fine tuning", "finetuning",
+            "instruction tuning", "gpt", "claude", "gemini", "deepseek", "qwen",
+        ),
     ),
     (
-        "rag",
-        "🔎 RAG, Search & Knowledge",
-        ("rag", "retrieval", "vector database", "vector store", "embedding", "semantic search", "knowledge base"),
+        "rag-knowledge-systems",
+        "🟢 🔎 RAG & Knowledge Systems",
+        (
+            "rag", "retrieval augmented", "retrieval", "vector database",
+            "vector store", "embedding", "semantic search", "knowledge base",
+            "knowledge graph", "document qa", "graph rag", "graphrag",
+        ),
     ),
     (
-        "creative",
-        "🎨 Multimodal & Creative AI",
-        ("multimodal", "computer vision", "image generation", "video generation", "text to image", "diffusion", "speech", "voice", "audio"),
+        "automation-workflows",
+        "🟠 ⚙️ Automation & Workflows",
+        (
+            "ai automation", "workflow automation", "automation", "workflow",
+            "workflows", "n8n", "activepieces", "rpa", "robotic process automation",
+            "low code", "no code", "computer automation", "browser automation",
+        ),
     ),
     (
-        "models",
-        "🧠 Models, LLMs & Generative AI",
-        ("llm", "large language model", "language model", "generative ai", "transformer", "foundation model", "inference", "fine tuning", "prompt"),
+        "ai-frameworks-libraries",
+        "🟡 🧰 AI Frameworks & Libraries",
+        (
+            "ai framework", "ai library", "ai sdk", "llm framework", "llm library",
+            "agent toolkit", "ai toolkit", "langchain", "llamaindex", "semantic kernel",
+            "pydantic ai", "dspy", "instructor", "haystack",
+        ),
     ),
     (
-        "research",
-        "📊 Machine Learning, Data & Research",
-        ("machine learning", "deep learning", "neural network", "data science", "pytorch", "tensorflow", "benchmark", "research paper"),
+        "generative-ai",
+        "🔴 🎨 Generative AI (Image, Video, Audio, 3D)",
+        (
+            "generative ai", "image generation", "video generation", "audio generation",
+            "music generation", "3d generation", "text to image", "text to video",
+            "text to speech", "speech synthesis", "voice cloning", "diffusion",
+            "stable diffusion", "comfyui", "automatic1111", "midjourney",
+        ),
     ),
     (
-        "infrastructure",
-        "🛠️ AI Infrastructure & Platforms",
-        ("ai gateway", "model gateway", "model serving", "llm gateway", "ai platform", "ai sdk", "openai proxy", "gpu", "mlops"),
+        "machine-learning-computer-vision",
+        "🟤 👁️ Machine Learning & Computer Vision",
+        (
+            "machine learning", "deep learning", "computer vision", "neural network",
+            "pytorch", "tensorflow", "scikit learn", "object detection", "segmentation",
+            "image classification", "opencv", "yolo", "vision model", "data science",
+        ),
+    ),
+    (
+        "infrastructure-deployment",
+        "⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)",
+        (
+            "model context protocol", "mcp server", "mcp", "mlops", "model serving",
+            "inference server", "inference engine", "local ai", "local llm", "ai api",
+            "llm api", "ai gateway", "llm gateway", "openai proxy", "gpu",
+            "vllm", "ollama", "llama cpp", "deployment", "serving",
+        ),
     ),
 )
-OTHER_CATEGORY = ("other", "✨ Other AI Projects")
+UNCATEGORIZED = ("not-ai", "Not AI")
 
 AI_SIGNALS = {
-    "ai",
-    "artificial intelligence",
-    "machine learning",
-    "deep learning",
-    "neural network",
-    "agent",
-    "agents",
-    "agentic",
-    "llm",
-    "large language model",
-    "language model",
-    "generative ai",
-    "chatbot",
-    "openai",
-    "anthropic",
-    "claude",
-    "gemini",
-    "deepseek",
-    "mistral",
-    "qwen",
-    "hugging face",
-    "transformer",
-    "rag",
-    "retrieval augmented",
-    "embedding",
-    "vector database",
-    "computer vision",
-    "diffusion",
-    "text to image",
-    "speech recognition",
-    "mcp",
-    "model context protocol",
-    "prompt engineering",
-    "copilot",
-    "codex",
+    "ai", "artificial intelligence", "machine learning", "deep learning",
+    "neural network", "ai agent", "ai agents", "agentic ai", "llm",
+    "large language model", "language model", "generative ai", "chatbot",
+    "openai", "anthropic", "claude", "gemini", "deepseek", "mistral", "qwen",
+    "hugging face", "transformer", "rag", "retrieval augmented", "embedding",
+    "vector database", "computer vision", "diffusion", "text to image",
+    "speech recognition", "model context protocol", "mcp", "prompt engineering",
+    "copilot", "codex", "pytorch", "tensorflow", "stable diffusion",
 }
 
 
@@ -197,11 +211,8 @@ def fetch_all_starred(token: str) -> list[dict[str, Any]]:
 
 def searchable_text(record: dict[str, Any]) -> str:
     values = [
-        record.get("name"),
-        record.get("full_name"),
-        record.get("description"),
-        record.get("homepage"),
-        " ".join(record.get("topics") or []),
+        record.get("name"), record.get("full_name"), record.get("description"),
+        record.get("homepage"), " ".join(record.get("topics") or []),
     ]
     return " ".join(re.sub(r"[^a-z0-9]+", " ", str(value).lower()) for value in values if value)
 
@@ -213,17 +224,19 @@ def has_phrase(text: str, phrase: str) -> bool:
 
 def classify_ai(record: dict[str, Any]) -> tuple[bool, str, str]:
     text = searchable_text(record)
-    relevant = any(has_phrase(text, signal) for signal in AI_SIGNALS)
-    if not relevant:
-        return False, OTHER_CATEGORY[0], OTHER_CATEGORY[1]
+    if not any(has_phrase(text, signal) for signal in AI_SIGNALS):
+        return False, UNCATEGORIZED[0], UNCATEGORIZED[1]
 
-    best_key, best_title = OTHER_CATEGORY
-    best_score = 0
-    for key, title, keywords in CATEGORIES:
-        score = sum(1 for keyword in keywords if has_phrase(text, keyword))
-        if score > best_score:
-            best_key, best_title, best_score = key, title, score
-    return True, best_key, best_title
+    scores = [
+        (sum(1 for keyword in keywords if has_phrase(text, keyword)), -position, key, title)
+        for position, (key, title, keywords) in enumerate(CATEGORIES)
+    ]
+    score, _, key, title = max(scores)
+    if score == 0:
+        # Explicitly AI-related repositories without a narrower signal belong to
+        # the broad frameworks/libraries group instead of an unlisted catch-all.
+        key, title, _ = CATEGORIES[4]
+    return True, key, title
 
 
 def normalize_record(item: dict[str, Any], existing: dict[str, Any] | None, sync_time: str) -> dict[str, Any]:
@@ -254,18 +267,15 @@ def normalize_record(item: dict[str, Any], existing: dict[str, Any] | None, sync
         "unstarred_at": None,
     }
     relevant, category, category_title = classify_ai(record)
-    record["ai_relevant"] = relevant
-    record["category"] = category
-    record["category_title"] = category_title
+    record.update(ai_relevant=relevant, category=category, category_title=category_title)
     return record
 
 
 def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, Any]], sync_time: str) -> dict[str, Any]:
-    existing_by_id: dict[int, dict[str, Any]] = {}
-    for record in existing_data.get("repositories", []):
-        if isinstance(record, dict) and record.get("id") is not None:
-            existing_by_id[int(record["id"])] = record
-
+    existing_by_id = {
+        int(record["id"]): record for record in existing_data.get("repositories", [])
+        if isinstance(record, dict) and record.get("id") is not None
+    }
     current_by_id: dict[int, dict[str, Any]] = {}
     for item in starred_items:
         repo_id = int(item["repo"]["id"])
@@ -278,9 +288,7 @@ def merge_dataset(existing_data: dict[str, Any], starred_items: list[dict[str, A
             continue
         historical = dict(record)
         relevant, category, category_title = classify_ai(historical)
-        historical["ai_relevant"] = relevant
-        historical["category"] = category
-        historical["category_title"] = category_title
+        historical.update(ai_relevant=relevant, category=category, category_title=category_title)
         if historical.get("starred", True):
             historical["starred"] = False
             historical["unstarred_at"] = historical.get("unstarred_at") or sync_time
@@ -315,49 +323,28 @@ def short_stars(value: Any) -> str:
     return str(number)
 
 
-def display_date(value: Any) -> str:
-    text = str(value or "")
-    return text[:10] if len(text) >= 10 else "—"
-
-
 def render_managed_block(dataset: dict[str, Any]) -> str:
     active = [
-        record
-        for record in dataset["repositories"]
+        record for record in dataset["repositories"]
         if record.get("starred") and record.get("ai_relevant")
     ]
-    active.sort(key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""), reverse=True)
-    category_order = [title for _, title, _ in CATEGORIES] + [OTHER_CATEGORY[1]]
-
-    lines = [
-        START_MARKER,
-        "## 📚 AI Repository Collection",
-        "",
-    ]
-    if not active:
-        lines.append(END_MARKER)
-        return "\n".join(lines)
-
-    for title in category_order:
-        records = [record for record in active if (record.get("category_title") or OTHER_CATEGORY[1]) == title]
-        if not records:
-            continue
-        lines.extend(
-            [
-                f"### {title}",
-                "",
-                "| Repository | Description | Stars |",
-                "|---|---|---:|",
-            ]
-        )
+    active.sort(
+        key=lambda record: (record.get("starred_at") or "", record.get("full_name") or ""),
+        reverse=True,
+    )
+    lines = [START_MARKER, "## 📚 AI Repository Collection", ""]
+    for key, title, _ in CATEGORIES:
+        records = [record for record in active if record.get("category") == key]
+        lines.extend([
+            f"### {title}", "", "| Repository | Description | Stars |", "|---|---|---:|",
+        ])
         for record in records:
             name = str(record.get("full_name") or record.get("name") or record.get("id") or "Repository")
             name = name.replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
             url = str(record.get("html_url") or "").strip()
             if url:
                 description = markdown_cell(record.get("description")) or "No description available."
-                stars = short_stars(record.get("stargazers_count"))
-                lines.append(f"| [{name}]({url}) | {description} | ⭐ {stars} |")
+                lines.append(f"| [{name}]({url}) | {description} | ⭐ {short_stars(record.get('stargazers_count'))} |")
         lines.append("")
     lines.append(END_MARKER)
     return "\n".join(lines)
