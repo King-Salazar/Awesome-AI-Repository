@@ -33,7 +33,7 @@ Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Promp
 [RayVentura/ShortGPT](https://github.com/RayVentura/ShortGPT) — ⭐ **7.8k**  
 🚀🎬 ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## 🟢 🔎 RAG & Knowledge Systems
@@ -47,7 +47,7 @@ RAG-Anything: All-in-One RAG Framework
 [infiniflow/ragflow](https://github.com/infiniflow/ragflow) — ⭐ **88.7k**  
 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs.
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## 🟠 ⚙️ Automation & Workflows
@@ -67,12 +67,12 @@ AI agents, automations and apps that run your operations. Model agnostic.
 [activepieces/activepieces](https://github.com/activepieces/activepieces) — ⭐ **23.9k**  
 AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## 🟡 🧰 AI Frameworks & Libraries
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## 🔴 🎨 Generative AI (Image, Video, Audio, 3D)
@@ -80,7 +80,7 @@ AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) �
 [gcui-art/suno-api](https://github.com/gcui-art/suno-api) — ⭐ **3.2k**  
 Use API to call the music generation AI of suno.ai, and easily integrate it into agents like GPTs.
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## 🟤 👁️ Machine Learning & Computer Vision
@@ -91,7 +91,7 @@ Use API to call the music generation AI of suno.ai, and easily integrate it into
 [wepe/MachineLearning](https://github.com/wepe/MachineLearning) — ⭐ **5.7k**  
 Basic Machine Learning and Deep Learning
 
-![Immagine](RubyDivisor.png)
+![Immagine](RubyDivisorR.png)
 
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
@@ -101,7 +101,6 @@ Connect Supabase to your AI assistants
 
 [WordPress/ai](https://github.com/WordPress/ai) — ⭐ **318**  
 AI features and experiments for WordPress. Modular framework for testing AI capabilities.
-
 
 
 ![Immagine](FinalRuby.png)
