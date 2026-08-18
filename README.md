@@ -6,6 +6,8 @@
 
 A curated collection of AI automation tools, workflows, and practical examples, organized across key areas including AI Agents, LLMs & Prompt Engineering, RAG & Knowledge Systems, Automation & Workflows, AI Frameworks & Libraries, Generative AI, Machine Learning & Computer Vision, and Infrastructure & Deployment—including MCP, APIs, MLOps, Local AI, and model serving.
 
+![Immagine](RubyDivisorR.png)
+
 ## 🔵 🤖 AI Agents
 
 [alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba) — ⭐ **10.6k**  
