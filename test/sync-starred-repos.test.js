@@ -45,10 +45,20 @@ test("formats GitHub star counts consistently", () => {
 test("detects AI repositories and categorizes new entries", () => {
   const rag = repo("example/rag", "Retrieval-Augmented Generation with a vector database");
   const automation = repo("example/flows", "n8n AI workflow automation", 100, ["artificial-intelligence"]);
+  const assistant = repo("example/assistant", "An AI assistants library for websites");
+  const guiAgent = repo("example/gui", "GUI Agent for E2E Testing", 100, ["gui-agent"]);
+  const toolkit = repo("example/toolkit", "An AI Toolkit and AI SDK for TypeScript", 100, ["llm"]);
+  const optimizer = repo("example/optimizer", "Libraries to optimise AI model performances", 100, ["llm"]);
   assert.equal(isAiRepository(rag), true);
   assert.equal(isAiRepository(repo("example/plain", "A CSS color palette")), false);
   assert.equal(classifyRepository(rag), "rag");
   assert.equal(classifyRepository(automation), "automation");
+  assert.equal(isAiRepository(assistant), true);
+  assert.equal(classifyRepository(assistant), "agents");
+  assert.equal(isAiRepository(guiAgent), true);
+  assert.equal(classifyRepository(guiAgent), "agents");
+  assert.equal(classifyRepository(toolkit), "frameworks");
+  assert.equal(classifyRepository(optimizer), "infrastructure");
 });
 
 test("updates only repository bodies and honors existing assignments", () => {
