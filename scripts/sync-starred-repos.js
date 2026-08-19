@@ -11,7 +11,7 @@ const CATEGORIES = [
   {
     id: "agents",
     heading: "## 🔵 🤖 AI Agents",
-    terms: ["ai agent", "ai-agent", "agentic", "multi-agent", "autonomous agent", "agent framework", "agent platform"],
+    terms: ["ai agent", "ai-agent", "ai assistant", "ai-assistant", "gui agent", "gui-agent", "agentic", "multi-agent", "autonomous agent", "agent framework", "agent platform"],
   },
   {
     id: "llm-prompting",
@@ -31,7 +31,7 @@ const CATEGORIES = [
   {
     id: "frameworks",
     heading: "## 🟡 🧰 AI Frameworks & Libraries",
-    terms: ["ai framework", "llm framework", "machine learning framework", "ai library", "llm library", "ai sdk", "llm sdk", "orchestration framework"],
+    terms: ["ai framework", "llm framework", "machine learning framework", "ai library", "llm library", "ai sdk", "llm sdk", "ai toolkit", "library for building ai", "orchestration framework"],
   },
   {
     id: "generative",
@@ -46,7 +46,7 @@ const CATEGORIES = [
   {
     id: "infrastructure",
     heading: "## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)",
-    terms: ["model context protocol", "model-context-protocol", "mcp server", "mcp-server", "mlops", "llmops", "model serving", "inference server", "inference engine", "local ai", "local-ai", "self-hosted ai", "ai infrastructure", "llm api", "ai api"],
+    terms: ["model context protocol", "model-context-protocol", "mcp server", "mcp-server", "mlops", "llmops", "model serving", "model performance", "ai model", "inference server", "inference engine", "model optimization", "network quantization", "network compression", "local ai", "local-ai", "self-hosted ai", "ai infrastructure", "llm api", "ai api"],
   },
 ];
 
@@ -66,6 +66,10 @@ const AI_TERMS = [
   "agentic",
   "ai agent",
   "ai-agent",
+  "ai assistant",
+  "ai-assistant",
+  "gui agent",
+  "gui-agent",
   "prompt engineering",
   "prompt-engineering",
   "retrieval augmented",
