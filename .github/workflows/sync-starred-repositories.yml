@@ -4,7 +4,8 @@ on:
   schedule:
     # GitHub cron uses UTC. Running at both candidates and checking Europe/Rome
     # keeps the effective time at 09:00 across CET and CEST.
-    - cron: "0 7,8 * * *"
+    - cron: "0 7 * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
 
 permissions:
@@ -22,9 +23,16 @@ jobs:
         id: local-time
         env:
           EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
           TZ: Europe/Rome
         run: |
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(date +%H)" = "09" ]; then
+          if [ "$(date +%z)" = "+0200" ]; then
+            expected_schedule="0 7 * * *"
+          else
+            expected_schedule="0 8 * * *"
+          fi
+
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_SCHEDULE" = "$expected_schedule" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
