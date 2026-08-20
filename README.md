@@ -26,7 +26,7 @@ GUI Agent for E2E Testing
 https://github.com/ai-boost/awesome-prompts — ⭐ **8.7k**  
 Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack &amp; prompt protect. Advanced Prompt Engineering papers.
 
-https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.5k**  
+https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.6k**  
 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
 
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
@@ -107,7 +107,7 @@ A collection of libraries to optimise AI model performances
 https://github.com/supabase/mcp — ⭐ **2.9k**  
 Connect Supabase to your AI assistants
 
-https://github.com/WordPress/ai — ⭐ **318**  
+https://github.com/WordPress/ai — ⭐ **320**  
 AI features and experiments for WordPress. Modular framework for testing AI capabilities.
 
 ![Immagine](FinalRuby.png)
