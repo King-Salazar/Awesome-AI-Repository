@@ -89,6 +89,9 @@ Superinterface is an AI assistants library for building AI capabilities into you
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.6k**  
 Agentic AI Framework for Java Developers
 
+https://github.com/qualcomm/aimet — ⭐ **2.7k**  
+AIMET is a library that provides advanced quantization and compression techniques for trained neural network models.
+
 ![Immagine](RubyDivisorR.png)
 
 ## 🔴 🎨 Generative AI (Image, Video, Audio, 3D)
@@ -102,9 +105,6 @@ https://github.com/RayVentura/ShortGPT — ⭐ **7.8k**
 ![Immagine](RubyDivisorR.png)
 
 ## 🟤 👁️ Machine Learning & Computer Vision
-
-https://github.com/qualcomm/aimet — ⭐ **2.7k**  
-AIMET is a library that provides advanced quantization and compression techniques for trained neural network models.
 
 https://github.com/trekhleb/homemade-machine-learning — ⭐ **24.8k**  
 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained.
