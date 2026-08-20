@@ -16,9 +16,6 @@ Agent Zero AI framework
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.6k**  
 Agentic AI Framework for Java Developers
 
-https://github.com/supercorp-ai/superinterface — ⭐ **343**  
-Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
-
 https://github.com/web-infra-dev/midscene — ⭐ **14.6k**  
 GUI Agent for E2E Testing
 
@@ -76,6 +73,9 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 
 https://github.com/vercel/ai — ⭐ **26.3k**  
 The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents
+
+https://github.com/supercorp-ai/superinterface — ⭐ **343**  
+Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
 
 ![Immagine](RubyDivisorR.png)
 
