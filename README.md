@@ -10,20 +10,20 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 
 ## 🔵 🤖 AI Agents
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **2.8k**  
-Local multi-agent harness
+https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
+Agent Zero AI framework
 
-https://github.com/volcengine/OpenViking — ⭐ **30.5k**  
-Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **2.9k**  
+local multi-agent harness
 
-https://github.com/DietrichGebert/ponytail — ⭐ **106.2k**  
+https://github.com/DietrichGebert/ponytail — ⭐ **106k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
 https://github.com/paperclipai/paperclip — ⭐ **78.9k**  
 The open-source app everyone uses to manage agents at work
 
-https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
-Agent Zero AI framework
+https://github.com/volcengine/OpenViking — ⭐ **30.6k**  
+Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.
 
 https://github.com/web-infra-dev/midscene — ⭐ **14.6k**  
 GUI Agent for E2E Testing
@@ -46,10 +46,10 @@ All things prompt engineering
 ## 🟢 🔎 RAG & Knowledge Systems
 
 https://github.com/HKUDS/RAG-Anything — ⭐ **23k**  
-RAG-Anything: All-in-One RAG Framework
+"RAG-Anything: All-in-One RAG Framework"
 
 https://github.com/infiniflow/ragflow — ⭐ **88.9k**  
-RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs.
+RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 
 https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.1k**  
 This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial.
@@ -58,9 +58,6 @@ This repository showcases various advanced techniques for Retrieval-Augmented Ge
 
 ## 🟠 ⚙️ Automation & Workflows
 
-https://github.com/harry0703/MoneyPrinterTurbo — ⭐ **111.7k**  
-利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。 Generate HD short videos from a topic or keyword with an automated AI workflow.
-
 https://github.com/activepieces/activepieces — ⭐ **23.9k**  
 AI Agents &amp; MCPs &amp; AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows &amp; AI Agents • MCPs for AI Agents
 
@@ -68,10 +65,13 @@ https://github.com/automagica/automagica — ⭐ **3.1k**
 AI-powered Smart Robotic Process Automation 🤖
 
 https://github.com/BrowserMCP/mcp — ⭐ **7k**  
-Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser.
+Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser
 
 https://github.com/Budibase/budibase — ⭐ **28.2k**  
 AI agents, automations and apps that run your operations. Model agnostic.
+
+https://github.com/harry0703/MoneyPrinterTurbo — ⭐ **112k**  
+利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
 
 https://github.com/lucaswalter/n8n-ai-automations — ⭐ **1.6k**  
 Collection of n8n workflows, n8n templates, AI automations, and AI agents created for The Recap AI YouTube channel and the AI Automation Mastery free Skool community.
@@ -80,17 +80,17 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 
 ## 🟡 🧰 AI Frameworks & Libraries
 
-https://github.com/vercel/ai — ⭐ **26.3k**  
-The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents
-
-https://github.com/supercorp-ai/superinterface — ⭐ **343**  
-Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
-
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.6k**  
 Agentic AI Framework for Java Developers
 
 https://github.com/qualcomm/aimet — ⭐ **2.7k**  
 AIMET is a library that provides advanced quantization and compression techniques for trained neural network models.
+
+https://github.com/supercorp-ai/superinterface — ⭐ **343**  
+Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
+
+https://github.com/vercel/ai — ⭐ **26.3k**  
+The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents
 
 ![Immagine](RubyDivisorR.png)
 
@@ -107,7 +107,7 @@ https://github.com/RayVentura/ShortGPT — ⭐ **7.8k**
 ## 🟤 👁️ Machine Learning & Computer Vision
 
 https://github.com/trekhleb/homemade-machine-learning — ⭐ **24.8k**  
-🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained.
+🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained
 
 https://github.com/wepe/MachineLearning — ⭐ **5.7k**  
 Basic Machine Learning and Deep Learning
@@ -116,14 +116,14 @@ Basic Machine Learning and Deep Learning
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/oomol-lab/open-connector — ⭐ **4.8k**  
-Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
-
 https://github.com/diegosouzapw/OmniRoute — ⭐ **51.4k**  
-Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, and more.
+Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
 A collection of libraries to optimise AI model performances
+
+https://github.com/oomol-lab/open-connector — ⭐ **4.8k**  
+Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
 
 https://github.com/supabase/mcp — ⭐ **2.9k**  
 Connect Supabase to your AI assistants
