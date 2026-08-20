@@ -25,9 +25,6 @@ The open-source app everyone uses to manage agents at work
 https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
 Agent Zero AI framework
 
-https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.6k**  
-Agentic AI Framework for Java Developers
-
 https://github.com/web-infra-dev/midscene — ⭐ **14.6k**  
 GUI Agent for E2E Testing
 
@@ -43,9 +40,6 @@ https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.6k**
 
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
 All things prompt engineering
-
-https://github.com/RayVentura/ShortGPT — ⭐ **7.8k**  
-🚀🎬 ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation
 
 ![Immagine](RubyDivisorR.png)
 
@@ -92,12 +86,18 @@ The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a fre
 https://github.com/supercorp-ai/superinterface — ⭐ **343**  
 Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
 
+https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.6k**  
+Agentic AI Framework for Java Developers
+
 ![Immagine](RubyDivisorR.png)
 
 ## 🔴 🎨 Generative AI (Image, Video, Audio, 3D)
 
 https://github.com/gcui-art/suno-api — ⭐ **3.2k**  
 Use API to call the music generation AI of suno.ai, and easily integrate it into agents like GPTs.
+
+https://github.com/RayVentura/ShortGPT — ⭐ **7.8k**  
+🚀🎬 ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation
 
 ![Immagine](RubyDivisorR.png)
 
