@@ -13,17 +13,14 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
 Agent Zero AI framework
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **2.9k**  
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **3.2k**  
 local multi-agent harness
 
-https://github.com/DietrichGebert/ponytail — ⭐ **106k**  
+https://github.com/DietrichGebert/ponytail — ⭐ **107k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-https://github.com/paperclipai/paperclip — ⭐ **78.9k**  
+https://github.com/paperclipai/paperclip — ⭐ **79k**  
 The open-source app everyone uses to manage agents at work
-
-https://github.com/volcengine/OpenViking — ⭐ **30.6k**  
-Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.
 
 https://github.com/web-infra-dev/midscene — ⭐ **14.6k**  
 GUI Agent for E2E Testing
@@ -35,7 +32,7 @@ GUI Agent for E2E Testing
 https://github.com/ai-boost/awesome-prompts — ⭐ **8.7k**  
 Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack &amp; prompt protect. Advanced Prompt Engineering papers.
 
-https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.6k**  
+https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.7k**  
 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
 
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
@@ -48,10 +45,10 @@ All things prompt engineering
 https://github.com/HKUDS/RAG-Anything — ⭐ **23k**  
 "RAG-Anything: All-in-One RAG Framework"
 
-https://github.com/infiniflow/ragflow — ⭐ **88.9k**  
+https://github.com/infiniflow/ragflow — ⭐ **89k**  
 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 
-https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.1k**  
+https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.2k**  
 This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. Each technique has a detailed notebook tutorial.
 
 ![Immagine](RubyDivisorR.png)
@@ -70,9 +67,6 @@ Browser MCP is a Model Context Provider (MCP) server that allows AI applications
 https://github.com/Budibase/budibase — ⭐ **28.2k**  
 AI agents, automations and apps that run your operations. Model agnostic.
 
-https://github.com/harry0703/MoneyPrinterTurbo — ⭐ **112k**  
-利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.
-
 https://github.com/lucaswalter/n8n-ai-automations — ⭐ **1.6k**  
 Collection of n8n workflows, n8n templates, AI automations, and AI agents created for The Recap AI YouTube channel and the AI Automation Mastery free Skool community.
 
@@ -80,11 +74,8 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 
 ## 🟡 🧰 AI Frameworks & Libraries
 
-https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.6k**  
+https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.7k**  
 Agentic AI Framework for Java Developers
-
-https://github.com/qualcomm/aimet — ⭐ **2.7k**  
-AIMET is a library that provides advanced quantization and compression techniques for trained neural network models.
 
 https://github.com/supercorp-ai/superinterface — ⭐ **343**  
 Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
@@ -96,10 +87,7 @@ The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a fre
 
 ## 🔴 🎨 Generative AI (Image, Video, Audio, 3D)
 
-https://github.com/gcui-art/suno-api — ⭐ **3.2k**  
-Use API to call the music generation AI of suno.ai, and easily integrate it into agents like GPTs.
-
-https://github.com/RayVentura/ShortGPT — ⭐ **7.8k**  
+https://github.com/RayVentura/ShortGPT — ⭐ **7.9k**  
 🚀🎬 ShortGPT - Experimental AI framework for youtube shorts / tiktok channel automation
 
 ![Immagine](RubyDivisorR.png)
@@ -116,7 +104,7 @@ Basic Machine Learning and Deep Learning
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/diegosouzapw/OmniRoute — ⭐ **51.4k**  
+https://github.com/diegosouzapw/OmniRoute — ⭐ **52.1k**  
 Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
@@ -124,12 +112,6 @@ A collection of libraries to optimise AI model performances
 
 https://github.com/oomol-lab/open-connector — ⭐ **4.8k**  
 Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
-
-https://github.com/supabase/mcp — ⭐ **2.9k**  
-Connect Supabase to your AI assistants
-
-https://github.com/WordPress/ai — ⭐ **321**  
-AI features and experiments for WordPress. Modular framework for testing AI capabilities.
 
 ![Immagine](FinalRuby.png)
 
