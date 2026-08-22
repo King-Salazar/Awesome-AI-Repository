@@ -13,16 +13,16 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
 Agent Zero AI framework
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **3.2k**  
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **3.4k**  
 local multi-agent harness
 
-https://github.com/DietrichGebert/ponytail — ⭐ **107k**  
+https://github.com/DietrichGebert/ponytail — ⭐ **108k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-https://github.com/paperclipai/paperclip — ⭐ **79k**  
+https://github.com/paperclipai/paperclip — ⭐ **79.1k**  
 The open-source app everyone uses to manage agents at work
 
-https://github.com/web-infra-dev/midscene — ⭐ **14.6k**  
+https://github.com/web-infra-dev/midscene — ⭐ **14.7k**  
 GUI Agent for E2E Testing
 
 ![Immagine](RubyDivisorR.png)
@@ -37,6 +37,9 @@ https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.7k**
 
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
 All things prompt engineering
+
+https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.3k**  
+A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.
 
 ![Immagine](RubyDivisorR.png)
 
@@ -55,7 +58,7 @@ This repository showcases various advanced techniques for Retrieval-Augmented Ge
 
 ## 🟠 ⚙️ Automation & Workflows
 
-https://github.com/activepieces/activepieces — ⭐ **23.9k**  
+https://github.com/activepieces/activepieces — ⭐ **24k**  
 AI Agents &amp; MCPs &amp; AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows &amp; AI Agents • MCPs for AI Agents
 
 https://github.com/automagica/automagica — ⭐ **3.1k**  
@@ -76,6 +79,9 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.7k**  
 Agentic AI Framework for Java Developers
+
+https://github.com/Leonxlnx/taste-skill — ⭐ **79.1k**  
+Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
 
 https://github.com/supercorp-ai/superinterface — ⭐ **343**  
 Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
@@ -104,13 +110,13 @@ Basic Machine Learning and Deep Learning
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/diegosouzapw/OmniRoute — ⭐ **52.1k**  
+https://github.com/diegosouzapw/OmniRoute — ⭐ **52.8k**  
 Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
 A collection of libraries to optimise AI model performances
 
-https://github.com/oomol-lab/open-connector — ⭐ **4.8k**  
+https://github.com/oomol-lab/open-connector — ⭐ **4.9k**  
 Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
 
 ![Immagine](FinalRuby.png)
