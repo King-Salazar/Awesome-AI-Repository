@@ -13,13 +13,13 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
 Agent Zero AI framework
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **3.4k**  
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **3.7k**  
 local multi-agent harness
 
 https://github.com/DietrichGebert/ponytail — ⭐ **108k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-https://github.com/paperclipai/paperclip — ⭐ **79.1k**  
+https://github.com/paperclipai/paperclip — ⭐ **79.2k**  
 The open-source app everyone uses to manage agents at work
 
 https://github.com/web-infra-dev/midscene — ⭐ **14.7k**  
@@ -38,7 +38,7 @@ https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.7k**
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
 All things prompt engineering
 
-https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.3k**  
+https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.6k**  
 A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.
 
 ![Immagine](RubyDivisorR.png)
@@ -48,7 +48,7 @@ A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skil
 https://github.com/HKUDS/RAG-Anything — ⭐ **23k**  
 "RAG-Anything: All-in-One RAG Framework"
 
-https://github.com/infiniflow/ragflow — ⭐ **89k**  
+https://github.com/infiniflow/ragflow — ⭐ **89.1k**  
 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 
 https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.2k**  
@@ -80,13 +80,13 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.7k**  
 Agentic AI Framework for Java Developers
 
-https://github.com/Leonxlnx/taste-skill — ⭐ **79.1k**  
+https://github.com/Leonxlnx/taste-skill — ⭐ **79.4k**  
 Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
 
 https://github.com/supercorp-ai/superinterface — ⭐ **343**  
 Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
 
-https://github.com/vercel/ai — ⭐ **26.3k**  
+https://github.com/vercel/ai — ⭐ **26.4k**  
 The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents
 
 ![Immagine](RubyDivisorR.png)
@@ -110,7 +110,7 @@ Basic Machine Learning and Deep Learning
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/diegosouzapw/OmniRoute — ⭐ **52.8k**  
+https://github.com/diegosouzapw/OmniRoute — ⭐ **53.4k**  
 Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
