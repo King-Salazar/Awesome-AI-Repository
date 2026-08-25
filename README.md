@@ -10,13 +10,13 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 
 ## 🔵 🤖 AI Agents
 
-https://github.com/agent0ai/agent-zero — ⭐ **18.9k**  
+https://github.com/agent0ai/agent-zero — ⭐ **19k**  
 Agent Zero AI framework
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **3.9k**  
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **4.2k**  
 local multi-agent harness
 
-https://github.com/DietrichGebert/ponytail — ⭐ **109k**  
+https://github.com/DietrichGebert/ponytail — ⭐ **110k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
 https://github.com/paperclipai/paperclip — ⭐ **79.3k**  
@@ -32,13 +32,13 @@ GUI Agent for E2E Testing
 https://github.com/ai-boost/awesome-prompts — ⭐ **8.8k**  
 Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Prompt Engineering, prompt attack &amp; prompt protect. Advanced Prompt Engineering papers.
 
-https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.7k**  
+https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.8k**  
 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
 
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
 All things prompt engineering
 
-https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.7k**  
+https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.8k**  
 A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.
 
 ![Immagine](RubyDivisorR.png)
@@ -48,7 +48,7 @@ A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skil
 https://github.com/HKUDS/RAG-Anything — ⭐ **23k**  
 "RAG-Anything: All-in-One RAG Framework"
 
-https://github.com/infiniflow/ragflow — ⭐ **89.1k**  
+https://github.com/infiniflow/ragflow — ⭐ **89.2k**  
 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 
 https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.2k**  
@@ -80,7 +80,7 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.7k**  
 Agentic AI Framework for Java Developers
 
-https://github.com/Leonxlnx/taste-skill — ⭐ **79.8k**  
+https://github.com/Leonxlnx/taste-skill — ⭐ **80.2k**  
 Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
 
 https://github.com/supercorp-ai/superinterface — ⭐ **343**  
@@ -103,20 +103,20 @@ https://github.com/RayVentura/ShortGPT — ⭐ **7.9k**
 https://github.com/trekhleb/homemade-machine-learning — ⭐ **24.8k**  
 🤖 Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained
 
-https://github.com/wepe/MachineLearning — ⭐ **5.7k**  
+https://github.com/wepe/MachineLearning — ⭐ **5.8k**  
 Basic Machine Learning and Deep Learning
 
 ![Immagine](RubyDivisorR.png)
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/diegosouzapw/OmniRoute — ⭐ **54k**  
+https://github.com/diegosouzapw/OmniRoute — ⭐ **54.6k**  
 Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
 A collection of libraries to optimise AI model performances
 
-https://github.com/oomol-lab/open-connector — ⭐ **5.1k**  
+https://github.com/oomol-lab/open-connector — ⭐ **5.2k**  
 Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
 
 ![Immagine](FinalRuby.png)
