@@ -11,12 +11,12 @@ const CATEGORIES = [
   {
     id: "agents",
     heading: "## 🔵 🤖 AI Agents",
-    terms: ["ai agent", "ai-agent", "ai assistant", "ai-assistant", "gui agent", "gui-agent", "agentic", "multi-agent", "autonomous agent", "agent framework", "agent platform"],
+    terms: ["ai agent", "ai-agent", "ai assistant", "ai-assistant", "agent", "agents", "gui agent", "gui-agent", "agentic", "multi-agent", "autonomous agent", "agent framework", "agent platform", "computer use", "computer-use"],
   },
   {
     id: "llm-prompting",
     heading: "## 🟣 🧠 LLMs & Prompt Engineering",
-    terms: ["llm", "large language model", "prompt engineering", "prompt-engineering", "prompt", "context engineering", "chatgpt", "gpt"],
+    terms: ["llm", "large language model", "prompt engineering", "prompt-engineering", "prompt", "context engineering", "chatgpt", "gpt", "openai", "claude", "gemini", "ollama", "langchain", "llamaindex"],
   },
   {
     id: "rag",
@@ -31,7 +31,7 @@ const CATEGORIES = [
   {
     id: "frameworks",
     heading: "## 🟡 🧰 AI Frameworks & Libraries",
-    terms: ["ai framework", "llm framework", "machine learning framework", "ai library", "llm library", "ai sdk", "llm sdk", "ai toolkit", "library for building ai", "orchestration framework"],
+    terms: ["ai framework", "llm framework", "machine learning framework", "ai library", "llm library", "ai sdk", "llm sdk", "ai toolkit", "library for building ai", "orchestration framework", "pytorch", "tensorflow"],
   },
   {
     id: "generative",
@@ -46,14 +46,24 @@ const CATEGORIES = [
   {
     id: "infrastructure",
     heading: "## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)",
-    terms: ["model context protocol", "model-context-protocol", "mcp server", "mcp-server", "mlops", "llmops", "model serving", "model performance", "ai model", "inference server", "inference engine", "model optimization", "network quantization", "network compression", "local ai", "local-ai", "self-hosted ai", "ai infrastructure", "llm api", "ai api"],
+    terms: ["model context protocol", "model-context-protocol", "mcp", "mcp server", "mcp-server", "mlops", "llmops", "model serving", "model performance", "ai model", "inference server", "inference engine", "model optimization", "network quantization", "network compression", "local ai", "local-ai", "self-hosted ai", "ai infrastructure", "llm api", "ai api"],
   },
 ];
 
 const AI_TERMS = [
+  "ai",
   "artificial intelligence",
   "artificial-intelligence",
+  "automation",
+  "agent",
+  "agents",
+  "agentic",
+  "ai agent",
+  "ai-agent",
+  "ai assistant",
+  "ai-assistant",
   "generative ai",
+  "generative-ai",
   "machine learning",
   "machine-learning",
   "deep learning",
@@ -63,30 +73,34 @@ const AI_TERMS = [
   "large language model",
   "large-language-model",
   "llm",
-  "agentic",
-  "ai agent",
-  "ai-agent",
-  "ai assistant",
-  "ai-assistant",
-  "gui agent",
-  "gui-agent",
   "prompt engineering",
   "prompt-engineering",
   "retrieval augmented",
   "retrieval-augmented",
   "rag",
-  "generative-ai",
   "stable diffusion",
+  "diffusion",
   "natural language processing",
   "nlp",
   "model context protocol",
   "model-context-protocol",
-  "mcp server",
+  "mcp",
   "mlops",
   "llmops",
   "neural network",
   "transformer",
   "embedding",
+  "openai",
+  "chatgpt",
+  "claude",
+  "gemini",
+  "ollama",
+  "langchain",
+  "llamaindex",
+  "pytorch",
+  "tensorflow",
+  "computer use",
+  "computer-use",
 ];
 
 function searchableText(repo) {
@@ -251,4 +265,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { CATEGORIES, classifyRepository, formatStars, isAiRepository, readExistingAssignments, updateReadme };
+module.exports = { AI_TERMS, CATEGORIES, classifyRepository, formatStars, isAiRepository, readExistingAssignments, updateReadme };

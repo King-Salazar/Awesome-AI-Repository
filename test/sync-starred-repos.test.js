@@ -2,6 +2,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const {
+  AI_TERMS,
   CATEGORIES,
   classifyRepository,
   formatStars,
@@ -33,6 +34,24 @@ function fixtureReadme() {
 
   return `![Immagine](Ruby.png)\n\n<!-- STAR-COLLECTOR:START -->\n\n# Collection\n\n${sections}\n\n## Keywords\n\nAI\n\n<!-- STAR-COLLECTOR:END -->\n`;
 }
+
+test("uses exactly 50 AI inclusion keywords", () => {
+  assert.equal(AI_TERMS.length, 50);
+  assert.equal(new Set(AI_TERMS).size, 50);
+
+  for (const description of [
+    "AI developer tools",
+    "Workflow automation platform",
+    "Autonomous agent runtime",
+    "Claude coding toolkit",
+    "Local Ollama interface",
+    "MCP integration server",
+    "Built with PyTorch",
+    "Computer-use benchmark",
+  ]) {
+    assert.equal(isAiRepository(repo("example/candidate", description)), true, description);
+  }
+});
 
 test("formats GitHub star counts consistently", () => {
   assert.equal(formatStars(318), "318");
@@ -66,7 +85,7 @@ test("updates only repository bodies and honors existing assignments", () => {
   const starred = [
     repo("example/existing", "<img src=x> Updated framework description", 2500),
     repo("example/new-rag", "RAG and semantic search toolkit", 9876),
-    repo("example/not-ai", "A CSS color palette", 500),
+    repo("example/plain-css", "A CSS color palette", 500),
   ];
 
   const updated = updateReadme(readme, starred, "owner/collection");
@@ -75,7 +94,7 @@ test("updates only repository bodies and honors existing assignments", () => {
   assert.match(updated, /&lt;img src=x&gt; Updated framework description/);
   assert.ok(updated.indexOf("example/existing") < updated.indexOf(CATEGORIES[1].heading));
   assert.ok(updated.indexOf("example/new-rag") > updated.indexOf(CATEGORIES[2].heading));
-  assert.doesNotMatch(updated, /example\/not-ai/);
+  assert.doesNotMatch(updated, /example\/plain-css/);
   assert.equal((updated.match(/!\[Immagine\]\(RubyDivisorR\.png\)/g) || []).length, 7);
   assert.match(updated, /^!\[Immagine\]\(Ruby\.png\)/);
   assert.match(updated, /## Keywords\n\nAI/);
