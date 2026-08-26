@@ -85,7 +85,7 @@ test("updates only repository bodies and honors existing assignments", () => {
   const starred = [
     repo("example/existing", "<img src=x> Updated framework description", 2500),
     repo("example/new-rag", "RAG and semantic search toolkit", 9876),
-    repo("example/not-ai", "A CSS color palette", 500),
+    repo("example/plain-css", "A CSS color palette", 500),
   ];
 
   const updated = updateReadme(readme, starred, "owner/collection");
