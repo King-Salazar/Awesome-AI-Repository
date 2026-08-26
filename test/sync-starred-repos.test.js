@@ -2,6 +2,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const {
+  AI_TERMS,
   CATEGORIES,
   classifyRepository,
   formatStars,
@@ -33,6 +34,24 @@ function fixtureReadme() {
 
   return `![Immagine](Ruby.png)\n\n<!-- STAR-COLLECTOR:START -->\n\n# Collection\n\n${sections}\n\n## Keywords\n\nAI\n\n<!-- STAR-COLLECTOR:END -->\n`;
 }
+
+test("uses exactly 50 AI inclusion keywords", () => {
+  assert.equal(AI_TERMS.length, 50);
+  assert.equal(new Set(AI_TERMS).size, 50);
+
+  for (const description of [
+    "AI developer tools",
+    "Workflow automation platform",
+    "Autonomous agent runtime",
+    "Claude coding toolkit",
+    "Local Ollama interface",
+    "MCP integration server",
+    "Built with PyTorch",
+    "Computer-use benchmark",
+  ]) {
+    assert.equal(isAiRepository(repo("example/candidate", description)), true, description);
+  }
+});
 
 test("formats GitHub star counts consistently", () => {
   assert.equal(formatStars(318), "318");
