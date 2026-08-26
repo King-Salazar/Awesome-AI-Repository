@@ -13,17 +13,29 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 https://github.com/agent0ai/agent-zero — ⭐ **19k**  
 Agent Zero AI framework
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **4.2k**  
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **4.6k**  
 local multi-agent harness
 
-https://github.com/DietrichGebert/ponytail — ⭐ **110k**  
+https://github.com/DietrichGebert/ponytail — ⭐ **112k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-https://github.com/paperclipai/paperclip — ⭐ **79.3k**  
+https://github.com/hugohe3/ppt-master — ⭐ **49.5k**  
+AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He
+
+https://github.com/MadsLorentzen/ai-job-search — ⭐ **35.7k**  
+The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.
+
+https://github.com/mstfash/skills — ⭐ **21**  
+My daily AI agent skills for Claude Code, Codex, frontend QA, reviews, and workflow automation.
+
+https://github.com/paperclipai/paperclip — ⭐ **79.4k**  
 The open-source app everyone uses to manage agents at work
 
 https://github.com/web-infra-dev/midscene — ⭐ **14.7k**  
 GUI Agent for E2E Testing
+
+https://github.com/XiaoLuoLYG/GOD — ⭐ **1.1k**  
+Govern, Observe, Direct - a real-time control room for agent societies
 
 ![Immagine](RubyDivisorR.png)
 
@@ -35,20 +47,23 @@ Curated list of chatgpt prompts from the top-rated GPTs in the GPTs Store. Promp
 https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.8k**  
 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
 
+https://github.com/freestylefly/awesome-gpt-image-2 — ⭐ **19.6k**  
+Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中
+
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
 All things prompt engineering
 
-https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.8k**  
+https://github.com/Tencent/AI-Infra-Guard — ⭐ **5.9k**  
 A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation.
 
 ![Immagine](RubyDivisorR.png)
 
 ## 🟢 🔎 RAG & Knowledge Systems
 
-https://github.com/HKUDS/RAG-Anything — ⭐ **23k**  
+https://github.com/HKUDS/RAG-Anything — ⭐ **23.1k**  
 "RAG-Anything: All-in-One RAG Framework"
 
-https://github.com/infiniflow/ragflow — ⭐ **89.2k**  
+https://github.com/infiniflow/ragflow — ⭐ **89.3k**  
 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 
 https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.2k**  
@@ -80,10 +95,16 @@ Collection of n8n workflows, n8n templates, AI automations, and AI agents create
 https://github.com/alibaba/spring-ai-alibaba — ⭐ **10.7k**  
 Agentic AI Framework for Java Developers
 
-https://github.com/Leonxlnx/taste-skill — ⭐ **80.2k**  
+https://github.com/JOYCEQL/magic-resume — ⭐ **10.2k**  
+free online AI resume editor，the only official website is https://magicv.art
+
+https://github.com/Leonxlnx/taste-skill — ⭐ **80.7k**  
 Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
 
-https://github.com/supercorp-ai/superinterface — ⭐ **343**  
+https://github.com/NxcoreAI/EverRoom — ⭐ **473**  
+EverRoom - A workspace that remembers your projects, decisions, and sources.
+
+https://github.com/supercorp-ai/superinterface — ⭐ **344**  
 Superinterface is an AI assistants library for building AI capabilities into your app or website. You use React components and hooks to build AI-first assistants-based interfaces like chats and wizards.
 
 https://github.com/vercel/ai — ⭐ **26.4k**  
@@ -110,13 +131,13 @@ Basic Machine Learning and Deep Learning
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/diegosouzapw/OmniRoute — ⭐ **54.6k**  
+https://github.com/diegosouzapw/OmniRoute — ⭐ **55.5k**  
 Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
 A collection of libraries to optimise AI model performances
 
-https://github.com/oomol-lab/open-connector — ⭐ **5.2k**  
+https://github.com/oomol-lab/open-connector — ⭐ **5.3k**  
 Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.
 
 ![Immagine](FinalRuby.png)
