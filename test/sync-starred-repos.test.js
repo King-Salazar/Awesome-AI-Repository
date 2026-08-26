@@ -94,7 +94,7 @@ test("updates only repository bodies and honors existing assignments", () => {
   assert.match(updated, /&lt;img src=x&gt; Updated framework description/);
   assert.ok(updated.indexOf("example/existing") < updated.indexOf(CATEGORIES[1].heading));
   assert.ok(updated.indexOf("example/new-rag") > updated.indexOf(CATEGORIES[2].heading));
-  assert.doesNotMatch(updated, /example\/not-ai/);
+  assert.doesNotMatch(updated, /example\/plain-css/);
   assert.equal((updated.match(/!\[Immagine\]\(RubyDivisorR\.png\)/g) || []).length, 7);
   assert.match(updated, /^!\[Immagine\]\(Ruby\.png\)/);
   assert.match(updated, /## Keywords\n\nAI/);
