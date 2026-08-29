@@ -13,25 +13,25 @@ A curated collection of AI automation tools, workflows, and practical examples, 
 https://github.com/agent0ai/agent-zero — ⭐ **19k**  
 Agent Zero AI framework
 
-https://github.com/chaitanyagiri/munder-difflin — ⭐ **5.2k**  
+https://github.com/chaitanyagiri/munder-difflin — ⭐ **5.4k**  
 local multi-agent harness
 
-https://github.com/DietrichGebert/ponytail — ⭐ **115k**  
+https://github.com/DietrichGebert/ponytail — ⭐ **116k**  
 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-https://github.com/hugohe3/ppt-master — ⭐ **50k**  
+https://github.com/hugohe3/ppt-master — ⭐ **50.1k**  
 AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He
 
 https://github.com/joonspk-research/generative_agents — ⭐ **22k**  
 Generative Agents: Interactive Simulacra of Human Behavior
 
-https://github.com/MadsLorentzen/ai-job-search — ⭐ **37.6k**  
+https://github.com/MadsLorentzen/ai-job-search — ⭐ **37.9k**  
 The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.
 
 https://github.com/mstfash/skills — ⭐ **21**  
 My daily AI agent skills for Claude Code, Codex, frontend QA, reviews, and workflow automation.
 
-https://github.com/nexu-io/open-design — ⭐ **92.3k**  
+https://github.com/nexu-io/open-design — ⭐ **92.5k**  
 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images &amp; video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode &amp; 20+ CLIs via BYOK.
 
 https://github.com/paperclipai/paperclip — ⭐ **79.6k**  
@@ -40,7 +40,7 @@ The open-source app everyone uses to manage agents at work
 https://github.com/Shubhamsaboo/awesome-llm-apps — ⭐ **135k**  
 100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.
 
-https://github.com/tt-a1i/archify — ⭐ **26.8k**  
+https://github.com/tt-a1i/archify — ⭐ **29.5k**  
 Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.
 
 https://github.com/web-infra-dev/midscene — ⭐ **14.7k**  
@@ -62,16 +62,16 @@ Vibe Schooling — AI-powered academic automation toolkit. Canvas auto-answering
 https://github.com/dair-ai/Prompt-Engineering-Guide — ⭐ **77.9k**  
 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.
 
-https://github.com/freestylefly/awesome-gpt-image-2 — ⭐ **24.2k**  
+https://github.com/freestylefly/awesome-gpt-image-2 — ⭐ **24.8k**  
 Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中
 
-https://github.com/GetBusbar/busbar — ⭐ **115**  
+https://github.com/GetBusbar/busbar — ⭐ **116**  
 Point your existing SDK at one URL and reach every LLM vendor — with real failover, not a try/except. One static Rust binary.
 
 https://github.com/microsoft/promptbase — ⭐ **5.8k**  
 All things prompt engineering
 
-https://github.com/Nutlope/hallmark — ⭐ **27.4k**  
+https://github.com/Nutlope/hallmark — ⭐ **27.5k**  
 Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
 
 https://github.com/Tencent/AI-Infra-Guard — ⭐ **6k**  
@@ -84,7 +84,7 @@ A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skil
 https://github.com/HKUDS/RAG-Anything — ⭐ **23.1k**  
 "RAG-Anything: All-in-One RAG Framework"
 
-https://github.com/infiniflow/ragflow — ⭐ **89.5k**  
+https://github.com/infiniflow/ragflow — ⭐ **89.6k**  
 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
 
 https://github.com/NirDiamant/RAG_Techniques — ⭐ **29.3k**  
@@ -125,10 +125,10 @@ Agentic AI Framework for Java Developers
 https://github.com/JOYCEQL/magic-resume — ⭐ **10.3k**  
 free online AI resume editor，the only official website is https://magicv.art
 
-https://github.com/Leonxlnx/taste-skill — ⭐ **81.9k**  
+https://github.com/Leonxlnx/taste-skill — ⭐ **82k**  
 Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop
 
-https://github.com/NxcoreAI/EverRoom — ⭐ **522**  
+https://github.com/NxcoreAI/EverRoom — ⭐ **538**  
 EverRoom - A workspace that remembers your projects, decisions, and sources.
 
 https://github.com/supercorp-ai/superinterface — ⭐ **344**  
@@ -158,7 +158,7 @@ Basic Machine Learning and Deep Learning
 
 ## ⚫ 🚀 Infrastructure & Deployment (MCP, APIs, MLOps, Local AI, Serving)
 
-https://github.com/diegosouzapw/OmniRoute — ⭐ **57.5k**  
+https://github.com/diegosouzapw/OmniRoute — ⭐ **57.8k**  
 Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline &amp; Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 450+ contributors
 
 https://github.com/nebuly-ai/optimate — ⭐ **8.3k**  
