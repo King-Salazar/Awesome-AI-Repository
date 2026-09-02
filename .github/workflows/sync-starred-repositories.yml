@@ -45,7 +45,6 @@ jobs:
       - name: Sync starred AI repositories
         if: steps.local-time.outputs.run == 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           STARRED_USERNAME: SaPPhire999-afk
         run: node scripts/sync-starred-repos.js
 
