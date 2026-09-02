@@ -5,6 +5,7 @@ const {
   AI_TERMS,
   CATEGORIES,
   classifyRepository,
+  fetchStarredRepositories,
   formatStars,
   isAiRepository,
   updateReadme,
@@ -51,6 +52,24 @@ test("uses exactly 50 AI inclusion keywords", () => {
   ]) {
     assert.equal(isAiRepository(repo("example/candidate", description)), true, description);
   }
+});
+
+test("fetches public stars without an authorization header", async (t) => {
+  let request;
+
+  t.mock.method(global, "fetch", async (url, options) => {
+    request = { url, options };
+    return {
+      ok: true,
+      async json() {
+        return [];
+      },
+    };
+  });
+
+  assert.deepEqual(await fetchStarredRepositories("example-user"), []);
+  assert.match(request.url, /users\/example-user\/starred/);
+  assert.equal(request.options.headers.Authorization, undefined);
 });
 
 test("formats GitHub star counts consistently", () => {
