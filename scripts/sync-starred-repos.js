@@ -224,10 +224,10 @@ async function fetchStarredRepositories(username, token) {
   const repositories = [];
   const headers = {
     Accept: "application/vnd.github+json",
-    Authorization: `Bearer ${token}`,
     "X-GitHub-Api-Version": "2022-11-28",
     "User-Agent": "awesome-ai-star-collector",
   };
+  if (token) headers.Authorization = `Bearer ${token}`;
 
   for (let page = 1; ; page += 1) {
     const response = await fetch(`https://api.github.com/users/${encodeURIComponent(username)}/starred?per_page=100&page=${page}`, { headers });
@@ -246,8 +246,8 @@ async function main() {
   const repository = process.env.GITHUB_REPOSITORY;
   const readmePath = path.resolve(process.env.README_PATH || "README.md");
 
-  if (!token || !username || !repository) {
-    throw new Error("GITHUB_TOKEN, STARRED_USERNAME, and GITHUB_REPOSITORY are required.");
+  if (!username || !repository) {
+    throw new Error("STARRED_USERNAME and GITHUB_REPOSITORY are required.");
   }
 
   const readme = fs.readFileSync(readmePath, "utf8");
@@ -265,4 +265,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { AI_TERMS, CATEGORIES, classifyRepository, formatStars, isAiRepository, readExistingAssignments, updateReadme };
+module.exports = { AI_TERMS, CATEGORIES, classifyRepository, fetchStarredRepositories, formatStars, isAiRepository, readExistingAssignments, updateReadme };
